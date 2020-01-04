@@ -1,0 +1,64 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.7.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+    id 'java'
+}
+
+group = 'com.shadow.springboot'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('org.springframework.boot:spring-boot-starter-web') {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+    }
+
+//    implementation ('org.springframework.boot:spring-boot-starter-data-common'){
+//        exclude  group:'org.springframework.boot',module:'spring-boot-starter-logging'
+//    }
+
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa') {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+    }
+    implementation 'org.apache.commons:commons-pool2'
+
+    implementation 'org.springframework.boot:spring-boot-starter-log4j2'
+
+    implementation 'mysql:mysql-connector-java'
+
+    //redis 需要commons-pool2
+    implementation('org.springframework.boot:spring-boot-starter-data-redis') {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+    }
+
+    //连接池
+    implementation 'com.alibaba:druid:1.1.10'
+    //json
+    implementation 'com.alibaba:fastjson:1.2.58'
+
+    //引入shiro安全框架
+    implementation 'org.apache.shiro:shiro-spring:1.4.0'
+    //apache 使用其base64工具
+    implementation 'commons-codec:commons-codec:1.11'
+    implementation 'commons-lang:commons-lang:2.6'
+
+    //restful api 文档 swagger2
+    implementation 'io.springfox:springfox-swagger2:2.9.2'
+    implementation 'io.springfox:springfox-swagger-ui:2.9.2'
+
+    //java jwt
+    implementation 'io.jsonwebtoken:jjwt:0.9.1'
+
+    //分页支持pageHelper
+//    implementation ('com.github.pagehelper:pagehelper-spring-boot-starter:1.2.10'){
+//        exclude  group:'org.springframework.boot',module:'spring-boot-starter-logging'
+//    }
+
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.springframework.boot', module: 'spring-boot-starter-logging'
+    }
+}

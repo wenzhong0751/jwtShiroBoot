@@ -1,0 +1,443 @@
+[2019-10-22 09:34:43] DEBUG org.springframework.boot.StartupInfoLogger 53 logStarting - Running with Spring Boot v2.1.7.RELEASE, Spring v5.1.9.RELEASE
+[2019-10-22 09:34:45] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} connected
+[2019-10-22 09:34:45] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-connect
+[2019-10-22 09:34:45] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-recycle
+[2019-10-22 09:34:45] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-connect
+[2019-10-22 09:34:45] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-recycle
+[2019-10-22 09:34:46] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-connect
+[2019-10-22 09:34:46] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-recycle
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.logging.InternalLoggerFactory 43 newDefaultFactory - Using SLF4J as the default logging framework
+[2019-10-22 09:34:54] DEBUG io.lettuce.core.resource.DefaultClientResources 109 <clinit> - -Dio.netty.eventLoopThreads: 4
+[2019-10-22 09:34:54] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider 138 createEventLoopGroup - Creating executor io.netty.util.concurrent.DefaultEventExecutorGroup
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.InternalThreadLocalMap 54 <clinit> - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.InternalThreadLocalMap 57 <clinit> - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[2019-10-22 09:34:54] DEBUG io.netty.util.ResourceLeakDetector 129 <clinit> - -Dio.netty.leakDetection.level: simple
+[2019-10-22 09:34:54] DEBUG io.netty.util.ResourceLeakDetector 130 <clinit> - -Dio.netty.leakDetection.targetRecords: 4
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent 927 isWindows0 - Platform: Windows
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent0 395 explicitNoUnsafeCause0 - -Dio.netty.noUnsafe: false
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent0 851 javaVersion0 - Java version: 8
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent0 120 <clinit> - sun.misc.Unsafe.theUnsafe: available
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent0 144 <clinit> - sun.misc.Unsafe.copyMemory: available
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent0 182 <clinit> - java.nio.Buffer.address: available
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent0 243 <clinit> - direct buffer constructor: available
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent0 313 <clinit> - java.nio.Bits.unaligned: available, true
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent0 378 <clinit> - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent0 385 <clinit> - java.nio.DirectByteBuffer.<init>(long, int): available
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent 970 unsafeUnavailabilityCause0 - sun.misc.Unsafe: available
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent 1089 tmpdir0 - -Dio.netty.tmpdir: C:\Users\TESLAN~1\AppData\Local\Temp (java.io.tmpdir)
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent 1168 bitMode0 - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent 159 <clinit> - -Dio.netty.maxDirectMemory: 1840250880 bytes
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent 166 <clinit> - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.CleanerJava6 92 <clinit> - java.nio.ByteBuffer.cleaner(): available
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent 186 <clinit> - -Dio.netty.noPreferDirect: false
+[2019-10-22 09:34:54] DEBUG io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory 202 newResourceLeakDetector - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@37d0d373
+[2019-10-22 09:34:54] DEBUG io.netty.util.internal.PlatformDependent$Mpsc 832 <clinit> - org.jctools-core.MpscChunkedArrayQueue: available
+[2019-10-22 09:34:54] DEBUG reactor.util.Loggers$Slf4JLogger 249 debug - Using Slf4j logging framework
+[2019-10-22 09:34:54] DEBUG io.lettuce.core.resource.DefaultClientResources 190 <init> - LatencyUtils/HdrUtils are not available, metrics are disabled
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 142 <clinit> - -Dio.netty.allocator.numHeapArenas: 8
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 143 <clinit> - -Dio.netty.allocator.numDirectArenas: 8
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 145 <clinit> - -Dio.netty.allocator.pageSize: 8192
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 150 <clinit> - -Dio.netty.allocator.maxOrder: 11
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 154 <clinit> - -Dio.netty.allocator.chunkSize: 16777216
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 155 <clinit> - -Dio.netty.allocator.tinyCacheSize: 512
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 156 <clinit> - -Dio.netty.allocator.smallCacheSize: 256
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 157 <clinit> - -Dio.netty.allocator.normalCacheSize: 64
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 158 <clinit> - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 159 <clinit> - -Dio.netty.allocator.cacheTrimInterval: 8192
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 160 <clinit> - -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 161 <clinit> - -Dio.netty.allocator.useCacheForAllThreads: true
+[2019-10-22 09:34:54] DEBUG io.netty.buffer.PooledByteBufAllocator 162 <clinit> - -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[2019-10-22 09:34:54] DEBUG com.shadow.springboot.application.shiro.filter.ShiroFilterChainManager 52 initGetFilters - initGetFilters be called
+[2019-10-22 09:34:54] DEBUG com.shadow.springboot.application.shiro.filter.ShiroFilterChainManager 70 initGetFilterChain - initGetFilterChain be called
+[2019-10-22 09:34:54] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-connect
+[2019-10-22 09:34:54] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} setAutoCommit false
+[2019-10-22 09:34:54] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} open
+[2019-10-22 09:34:54] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Header: [rid, code, createTime, icon, method, name, parentId, resourceType, status, updateTime, uri]
+[2019-10-22 09:34:54] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [1, ACCOUNT_LOGIN, null, null, POST, 用户登录, 3, 2, 1, null, /account/login]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [3, GROUP_ACCOUNT, null, null, POST, 账户系列, 10, 3, 1, null, ]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [4, USER_MAGE, null, fa fa-user, POST, 用户管理, -1, 1, 1, null, ]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [6, RESOURCE_MAGE, null, fa fa-pie-chart, POST, 资源配置, -1, 1, 1, null, ]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [7, MENU_MANAGE, null, fa fa-th, POST, 菜单管理, 6, 1, 1, null, /index/menu]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [9, API_MANAGE, 2018-04-07 09:40:24.0, fa fa-share, null, API管理, 6, 1, 1, 2018-04-07 09:40:24.0, /index/api]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [10, CATEGORY_GROUP, 2018-04-07 14:27:58.0, null, null, 分类集合(API类别请放入此集合), -1, 3, 1, 2018-04-07 14:27:58.0, null]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [12, ACCOUNT_REGISTER, 2018-04-07 16:21:45.0, null, POST, 用户注册, 3, 2, 1, 2018-04-07 16:21:45.0, /account/register]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [15, GROUP_USER, 2018-04-07 16:31:01.0, null, GET, 用户系列, 10, 3, 1, 2018-04-07 16:31:01.0, ]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [17, ROLE_MANAGE, 2018-04-08 05:36:31.0, fa fa-adjust, null, 角色管理, 6, 1, 1, 2018-04-08 05:36:31.0, /index/role]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [18, GROUP_RESOURCE, 2018-04-09 02:29:14.0, null, null, 资源系列, 10, 3, 1, 2018-04-09 02:29:14.0, null]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [19, USER_ROLE_APPID, 2018-04-12 03:07:22.0, null, GET, 获取对应用户角色, 15, 2, 1, 2018-04-12 03:07:22.0, /user/role/*]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [20, USER_LIST, 2018-04-12 03:08:30.0, null, GET, 获取用户列表, 15, 2, 1, 2018-04-12 03:08:30.0, /user/list/**]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [21, USER_AUTHORITY_ROLE, 2018-04-12 03:15:56.0, null, POST, 给用户授权添加角色, 15, 2, 1, 2018-04-12 03:15:56.0, /user/authority/role]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [22, USER_AUTHORITY_ROLE, 2018-04-12 03:29:03.0, null, DELETE, 删除已经授权的用户角色, 15, 2, 1, 2018-04-12 03:29:03.0, /user/authority/role]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [23, RESOURCE_AUTORITYMENU, 2018-04-12 05:30:03.0, null, GET, 获取用户被授权菜单, 18, 2, 1, 2018-04-12 05:30:03.0, /resource/authorityMenu]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [24, RESOURCE_MENUS, 2018-04-12 05:42:46.0, null, GET, 获取全部菜单列, 18, 2, 1, 2018-04-12 05:42:46.0, /resource/menus]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [25, RESOURCE_MENU, 2018-04-12 06:15:39.0, null, POST, 增加菜单, 18, 2, 1, 2018-04-12 06:15:39.0, /resource/menu]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [26, RESOURCE_MENU, 2018-04-12 06:16:35.0, null, PUT, 修改菜单, 18, 2, 1, 2018-04-12 06:16:35.0, /resource/menu]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [27, RESOURCE_MENU, 2018-04-12 06:17:18.0, null, DELETE, 删除菜单, 18, 2, 1, 2018-04-12 06:17:18.0, /resource/menu]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [28, RESOURCE_API, 2018-04-12 06:18:02.0, null, GET, 获取API list, 18, 2, 1, 2018-04-12 06:18:02.0, /resource/api/*/*/*]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [29, RESOURCE_API, 2018-04-12 06:18:42.0, null, POST, 增加API, 18, 2, 1, 2018-04-12 06:18:42.0, /resource/api]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [30, RESOURCE_API, 2018-04-12 06:19:32.0, null, PUT, 修改API, 18, 2, 1, 2018-04-12 06:19:32.0, /resource/api]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [31, RESOURCE_API, 2018-04-12 06:20:03.0, null, DELETE, 删除API, 18, 2, 1, 2018-04-12 06:20:03.0, /resource/api]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [32, GROUP_ROLE, 2018-04-12 06:22:02.0, null, null, 角色系列, 10, 3, 1, 2018-04-12 06:22:02.0, null]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [33, ROLE_USER, 2018-04-12 06:22:59.0, null, GET, 获取角色关联用户列表, 32, 2, 1, 2018-04-12 06:22:59.0, /role/user/*/*/*]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [34, ROLE_USER, 2018-04-12 06:24:09.0, null, GET, 获取角色未关联用户列表, 32, 2, 1, 2018-04-12 06:24:09.0, /role/user/-/*/*/*]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [35, ROLE_API, 2018-04-12 06:25:32.0, null, GET, 获取角色关联API资源, 32, 2, 1, 2018-04-12 06:25:32.0, /role/api/*/*/*]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [36, ROLE_API, 2018-04-12 06:26:12.0, null, GET, 获取角色未关联API资源, 32, 2, 1, 2018-04-12 06:26:12.0, /role/api/-/*/*/*]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [37, ROLE_MENU, 2018-04-12 06:27:20.0, null, GET, 获取角色关联菜单资源, 32, 2, 1, 2018-04-12 06:27:20.0, /role/menu/*/*/*]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [38, ROLE_MENU, 2018-04-12 06:27:56.0, null, GET, 获取角色未关联菜单资源, 32, 2, 1, 2018-04-12 06:27:56.0, /role/menu/-/*/*/*]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [39, ROLE_AUTHORITY_RESOURCE, 2018-04-12 06:29:45.0, null, POST, 授权资源给角色, 32, 2, 1, 2018-04-12 06:29:45.0, /role/authority/resource]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [40, ROLE_AUTHORITY_RESOURCE, 2018-04-12 06:31:12.0, null, DELETE, 删除角色的授权资源, 32, 2, 1, 2018-04-12 06:31:12.0, /role/authority/resource]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [41, ROLE, 2018-04-12 06:32:34.0, null, GET, 获取角色LIST, 32, 2, 1, 2018-04-12 06:32:34.0, /role/*/*]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [42, ROLE, 2018-04-12 06:33:25.0, null, POST, 添加角色, 32, 2, 1, 2018-04-12 06:33:25.0, /role]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [43, USER, 2018-04-12 06:34:27.0, null, PUT, 更新角色, 32, 2, 1, 2018-04-12 06:34:27.0, /role]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [44, ROLE, 2018-04-12 06:35:15.0, null, DELETE, 删除角色, 32, 2, 1, 2018-04-12 06:35:15.0, /role]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} Result: [45, LOG_WATCH, 2018-04-22 08:12:24.0, fa fa-rss-square, null, 日志记录, 4, 1, 1, 2018-04-22 08:12:24.0, /index/log]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20000, rs-50000} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50001} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50001} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50001} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50002} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50002} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50002} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50003} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50003} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50003} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50004} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50004} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50004} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50005} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50005} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50005} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50006} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50006} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50006} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50007} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50007} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50007} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50008} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50008} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50008} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50009} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50009} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50009} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50010} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50010} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50010} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50011} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50011} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50011} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50012} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50012} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50012} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50013} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50013} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50013} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50014} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50014} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50014} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50015} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50015} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50015} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50016} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50016} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50016} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50017} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50017} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50017} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50018} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50018} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50018} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50019} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50019} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50019} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50020} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50020} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50020} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50021} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50021} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50021} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50022} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50022} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50022} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50023} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50023} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50023} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50024} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50024} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50024} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50025} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50025} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50025} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50026} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50026} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50026} Result: [20, admin, admin, 2019-09-27 18:13:06.0, null, 管理员角色, 1, 2019-09-27 18:13:06.0]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50026} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50027} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50027} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50027} Result: [19, admin, admin, 2019-09-27 18:13:06.0, null, 管理员角色, 1, 2019-09-27 18:13:06.0]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50027} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50028} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50028} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50028} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50029} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50029} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50029} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50030} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50030} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50030} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50031} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50031} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50031} Result: [12, admin, admin, 2019-09-27 18:13:06.0, null, 管理员角色, 1, 2019-09-27 18:13:06.0]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50031} Result: [12, role_anon, role_anon, 2019-09-27 18:13:06.0, null, 非角色, 1, 2019-09-27 18:13:06.0]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50031} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50032} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50032} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50032} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50033} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50033} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50033} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50034} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50034} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50034} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50035} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50035} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50035} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50036} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50036} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50036} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50037} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50037} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50037} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50038} open
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50038} Header: [pid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20001, rs-50038} closed
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} commited
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} setAutoCommit true
+[2019-10-22 09:34:55] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-recycle
+[2019-10-22 09:34:55] DEBUG com.shadow.springboot.application.shiro.filter.ShiroFilterChainManager 81 initGetFilterChain - rolePermRules.size=27
+[2019-10-22 09:34:56] DEBUG com.shadow.springboot.application.shiro.config.RestShiroFilterFactoryBean 29 createInstance - Creating Shiro Filter instance.
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 127 createChain - Creating chain [/css/**] from String definition [anon]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 278 applyChainConfig - Attempting to apply path [/css/**] to filter [anon] with config [null]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 127 createChain - Creating chain [/js/**] from String definition [anon]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 278 applyChainConfig - Attempting to apply path [/js/**] to filter [anon] with config [null]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 127 createChain - Creating chain [/account/**] from String definition [auth]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 278 applyChainConfig - Attempting to apply path [/account/**] to filter [auth] with config [null]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 127 createChain - Creating chain [/account/register==POST] from String definition [anon]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 278 applyChainConfig - Attempting to apply path [/account/register==POST] to filter [anon] with config [null]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 127 createChain - Creating chain [/user/role/*==GET] from String definition [jwt[admin]]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 278 applyChainConfig - Attempting to apply path [/user/role/*==GET] to filter [jwt] with config [admin]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 127 createChain - Creating chain [/user/list/**==GET] from String definition [jwt[admin]]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 278 applyChainConfig - Attempting to apply path [/user/list/**==GET] to filter [jwt] with config [admin]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 127 createChain - Creating chain [/**] from String definition [jwt]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.web.filter.mgt.DefaultFilterChainManager 278 applyChainConfig - Attempting to apply path [/**] to filter [jwt] with config [null]
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.spring.web.ShiroFilterFactoryBean 501 postProcessBeforeInitialization - Found filter chain candidate filter 'requestContextFilter'
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.spring.web.ShiroFilterFactoryBean 501 postProcessBeforeInitialization - Found filter chain candidate filter 'hiddenHttpMethodFilter'
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.spring.web.ShiroFilterFactoryBean 501 postProcessBeforeInitialization - Found filter chain candidate filter 'formContentFilter'
+[2019-10-22 09:34:56] DEBUG org.apache.shiro.spring.web.ShiroFilterFactoryBean 501 postProcessBeforeInitialization - Found filter chain candidate filter 'characterEncodingFilter'
+[2019-10-22 09:35:17] DEBUG com.shadow.springboot.application.shiro.config.RestPathMatchingFilterChainResolver 54 getChain - requestURI=/user/role/testusername
+[2019-10-22 09:35:17] DEBUG com.shadow.springboot.application.shiro.config.RestPathMatchingFilterChainResolver 86 getChain - Matched path pattern [/user/role/*] for requestURI [/user/role/testusername].  Utilizing corresponding filter chain...
+[2019-10-22 09:35:17] DEBUG com.shadow.springboot.application.shiro.filter.BonJwtFilter 49 isAccessAllowed - isAccessAllowed is called.
+[2019-10-22 09:35:17] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-connect
+[2019-10-22 09:35:17] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} setAutoCommit false
+[2019-10-22 09:35:17] DEBUG com.shadow.springboot.application.shiro.realm.JwtRealm 69 doGetAuthenticationInfo - start.jwt=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoszNsKwjAQBNB_2ecE0ly7_RlJ7VaiNpVcRBD_3aT0cQ4z84V7CTCBsatGY5B7IRTXV4UcpSVu3Cw1SqcXuQKDXOdWLpRLzZSi36hhyLnj_qDIm74pdfQFpsG4QdlRoGZAn9cJoz0g7U_qQ79sIbKeLrfanuH3BwAA__8.y2TONpDFcnQqNovtqYZ-6bfNCgaH8T2FDhLADCCYUgR3X8CY4x3d2IeQIkcHZE1wFf0clX4hT1gLul05uMapWw
+[2019-10-22 09:35:17] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20002, rs-50039} open
+[2019-10-22 09:35:17] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20002, rs-50039} Header: [GENERATED_KEY]
+[2019-10-22 09:35:17] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20002, rs-50039} Result: [71]
+[2019-10-22 09:35:17] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20002, rs-50039} closed
+[2019-10-22 09:35:17] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} commited
+[2019-10-22 09:35:17] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} setAutoCommit true
+[2019-10-22 09:35:17] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-recycle
+[2019-10-22 09:35:17] DEBUG com.shadow.springboot.application.shiro.realm.JwtRealm 86 doGetAuthenticationInfo - end.jwt=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoszNsKwjAQBNB_2ecE0ly7_RlJ7VaiNpVcRBD_3aT0cQ4z84V7CTCBsatGY5B7IRTXV4UcpSVu3Cw1SqcXuQKDXOdWLpRLzZSi36hhyLnj_qDIm74pdfQFpsG4QdlRoGZAn9cJoz0g7U_qQ79sIbKeLrfanuH3BwAA__8.y2TONpDFcnQqNovtqYZ-6bfNCgaH8T2FDhLADCCYUgR3X8CY4x3d2IeQIkcHZE1wFf0clX4hT1gLul05uMapWw
+[2019-10-22 09:35:17] DEBUG org.apache.shiro.realm.AuthenticatingRealm 572 getAuthenticationInfo - Looked up AuthenticationInfo [jwt:{"jti":"56f49559-a003-4c39-926e-57b249274d2f","sub":"testusername","iss":"token-server","iat":1571368094,"exp":1571386094,"roles":"admin,role_guest"}] from doGetAuthenticationInfo
+[2019-10-22 09:35:17] DEBUG org.apache.shiro.realm.AuthenticatingRealm 510 cacheAuthenticationInfoIfPossible - AuthenticationInfo caching is disabled for info [jwt:{"jti":"56f49559-a003-4c39-926e-57b249274d2f","sub":"testusername","iss":"token-server","iat":1571368094,"exp":1571386094,"roles":"admin,role_guest"}].  Submitted token: [com.shadow.springboot.application.shiro.token.JwtToken@1b58a155].
+[2019-10-22 09:35:17] DEBUG com.shadow.springboot.application.shiro.matcher.JwtMatcher 30 doCredentialsMatch - start.jwt=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoszNsKwjAQBNB_2ecE0ly7_RlJ7VaiNpVcRBD_3aT0cQ4z84V7CTCBsatGY5B7IRTXV4UcpSVu3Cw1SqcXuQKDXOdWLpRLzZSi36hhyLnj_qDIm74pdfQFpsG4QdlRoGZAn9cJoz0g7U_qQ79sIbKeLrfanuH3BwAA__8.y2TONpDFcnQqNovtqYZ-6bfNCgaH8T2FDhLADCCYUgR3X8CY4x3d2IeQIkcHZE1wFf0clX4hT1gLul05uMapWw
+[2019-10-22 09:35:17] DEBUG org.apache.shiro.web.servlet.SimpleCookie 226 addCookieHeader - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Mon, 21-Oct-2019 01:35:17 GMT]
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.RedisClient 261 connectStandaloneAsync - Trying to get a Redis connection for: RedisURI [host='localhost', port=6379]
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider 64 allocate - Allocating executor io.netty.channel.nio.NioEventLoopGroup
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider 138 createEventLoopGroup - Creating executor io.netty.channel.nio.NioEventLoopGroup
+[2019-10-22 09:35:17] DEBUG io.netty.channel.MultithreadEventLoopGroup 44 <clinit> - -Dio.netty.eventLoopThreads: 8
+[2019-10-22 09:35:17] DEBUG io.netty.channel.nio.NioEventLoop 106 <clinit> - -Dio.netty.noKeySetOptimization: false
+[2019-10-22 09:35:17] DEBUG io.netty.channel.nio.NioEventLoop 107 <clinit> - -Dio.netty.selectorAutoRebuildThreshold: 512
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.resource.DefaultEventLoopGroupProvider 77 addReference - Adding reference to io.netty.channel.nio.NioEventLoopGroup@79df3c86, existing ref count 0
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.RedisClient 734 lambda$getSocketAddressSupplier$17 - Resolved SocketAddress localhost:6379 using RedisURI [host='localhost', port=6379]
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.AbstractRedisClient 305 initializeChannelAsync0 - Connecting to Redis at localhost:6379
+[2019-10-22 09:35:17] DEBUG io.netty.channel.DefaultChannelId 79 <clinit> - -Dio.netty.processId: 556 (auto-detected)
+[2019-10-22 09:35:17] DEBUG io.netty.util.NetUtil 139 <clinit> - -Djava.net.preferIPv4Stack: false
+[2019-10-22 09:35:17] DEBUG io.netty.util.NetUtil 140 <clinit> - -Djava.net.preferIPv6Addresses: false
+[2019-10-22 09:35:17] DEBUG io.netty.util.NetUtil 224 <clinit> - Loopback interface: lo (Software Loopback Interface 1, 127.0.0.1)
+[2019-10-22 09:35:17] DEBUG io.netty.util.NetUtil$1 289 run - Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[2019-10-22 09:35:17] DEBUG io.netty.channel.DefaultChannelId 101 <clinit> - -Dio.netty.machineId: 50:7b:9d:ff:fe:81:b1:79 (auto-detected)
+[2019-10-22 09:35:17] DEBUG io.netty.buffer.ByteBufUtil 85 <clinit> - -Dio.netty.allocator.type: pooled
+[2019-10-22 09:35:17] DEBUG io.netty.buffer.ByteBufUtil 94 <clinit> - -Dio.netty.threadLocalDirectBufferSize: 0
+[2019-10-22 09:35:17] DEBUG io.netty.buffer.ByteBufUtil 97 <clinit> - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[2019-10-22 09:35:17] DEBUG io.netty.util.Recycler 96 <clinit> - -Dio.netty.recycler.maxCapacityPerThread: 4096
+[2019-10-22 09:35:17] DEBUG io.netty.util.Recycler 97 <clinit> - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+[2019-10-22 09:35:17] DEBUG io.netty.util.Recycler 98 <clinit> - -Dio.netty.recycler.linkCapacity: 16
+[2019-10-22 09:35:17] DEBUG io.netty.util.Recycler 99 <clinit> - -Dio.netty.recycler.ratio: 8
+[2019-10-22 09:35:17] DEBUG io.netty.buffer.AbstractByteBuf 62 <clinit> - -Dio.netty.buffer.checkAccessible: true
+[2019-10-22 09:35:17] DEBUG io.netty.buffer.AbstractByteBuf 63 <clinit> - -Dio.netty.buffer.checkBounds: true
+[2019-10-22 09:35:17] DEBUG io.netty.util.ResourceLeakDetectorFactory$DefaultResourceLeakDetectorFactory 202 newResourceLeakDetector - Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@17781496
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.CommandHandler 154 channelRegistered - [channel=0xe5082ec3, [id: 0xcc1368ef] (inactive), chid=0x1] channelRegistered()
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.CommandHandler 263 channelActive - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] channelActive()
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.DefaultEndpoint 371 lambda$notifyChannelActive$0 - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] activateEndpointAndExecuteBufferedCommands 0 command(s) buffered
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.DefaultEndpoint 376 lambda$notifyChannelActive$0 - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] activating endpoint
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.DefaultEndpoint 453 flushCommands - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] flushCommands()
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.DefaultEndpoint 468 flushCommands - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] flushCommands() Flushing 0 commands
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.ConnectionWatchdog 159 channelActive - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, last known addr=localhost/127.0.0.1:6379] channelActive()
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.ConnectionWatchdog 159 channelActive - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, last known addr=localhost/127.0.0.1:6379] channelActive()
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.CommandHandler 277 channelActive - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] channelActive() done
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.AbstractRedisClient 338 lambda$null$3 - Connecting to Redis at localhost:6379: Success
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.ConnectionWatchdog 127 userEventTriggered - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, last known addr=localhost/127.0.0.1:6379] userEventTriggered(ctx, io.lettuce.core.ConnectionEvents$Activated@284c2866)
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.ConnectionWatchdog 127 userEventTriggered - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, last known addr=localhost/127.0.0.1:6379] userEventTriggered(ctx, io.lettuce.core.ConnectionEvents$Activated@284c2866)
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.RedisChannelHandler 171 dispatch - dispatching command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.DefaultEndpoint 339 channelWriteAndFlush - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.CommandHandler 341 write - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] write(ctx, AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.DefaultEndpoint 153 write - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] write() done
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.CommandEncoder 99 encode - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379] writing command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.CommandHandler 536 channelRead - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.CommandHandler 581 decode - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] Stack contains: 1 commands
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.RedisStateMachine 93 decode - Decode AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:17] DEBUG io.lettuce.core.protocol.RedisStateMachine 190 decode - Decoded AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[2019-10-22 09:35:18] DEBUG com.shadow.springboot.application.shiro.filter.BonJwtFilter 121 onAccessDenied - onAccessDenied is called.
+[2019-10-22 09:35:36] DEBUG com.shadow.springboot.application.shiro.config.RestPathMatchingFilterChainResolver 54 getChain - requestURI=/account/register
+[2019-10-22 09:35:36] DEBUG com.shadow.springboot.application.shiro.config.RestPathMatchingFilterChainResolver 86 getChain - Matched path pattern [/account/**] for requestURI [/account/register].  Utilizing corresponding filter chain...
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.RedisChannelHandler 171 dispatch - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.DefaultEndpoint 339 channelWriteAndFlush - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.DefaultEndpoint 153 write - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] write() done
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandHandler 341 write - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandEncoder 99 encode - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandHandler 536 channelRead - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandHandler 581 decode - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] Stack contains: 1 commands
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.RedisStateMachine 93 decode - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.RedisStateMachine 190 decode - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[2019-10-22 09:35:36] DEBUG com.shadow.springboot.application.shiro.config.RestPathMatchingFilterChainResolver 54 getChain - requestURI=/account/login
+[2019-10-22 09:35:36] DEBUG com.shadow.springboot.application.shiro.config.RestPathMatchingFilterChainResolver 86 getChain - Matched path pattern [/account/**] for requestURI [/account/login].  Utilizing corresponding filter chain...
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.RedisChannelHandler 171 dispatch - dispatching command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.DefaultEndpoint 339 channelWriteAndFlush - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandHandler 341 write - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] write(ctx, AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.DefaultEndpoint 153 write - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] write() done
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandEncoder 99 encode - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379] writing command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandHandler 536 channelRead - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] Received: 23 bytes, 1 commands in the stack
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandHandler 581 decode - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] Stack contains: 1 commands
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.RedisStateMachine 93 decode - Decode AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.RedisStateMachine 190 decode - Decoded AsyncCommand [type=GET, output=ValueOutput [output=[B@d4ccbb9, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-connect
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50040} open
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50040} Header: [uid, addr, disabled, email, nickname, password, regtime, salt, tel, username]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50040} Result: [2, testaddr, 0, testemail, testnickname, 810E3A9CD89BDAF998EE5BCD5FEF2CF1, 2019-10-11 17:14:15.0, 1p19ht, testtel, testusername]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50040} closed
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50041} open
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50041} Header: [uid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50041} Result: [2, admin, admin, 2019-09-27 18:13:06.0, null, 管理员角色, 1, 2019-09-27 18:13:06.0]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50041} Result: [2, role_guest, role_guest, 2019-09-27 18:13:06.0, null, 访客角色, 1, 2019-09-27 18:13:06.0]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50041} closed
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-recycle
+[2019-10-22 09:35:36] DEBUG org.apache.shiro.realm.AuthenticatingRealm 572 getAuthenticationInfo - Looked up AuthenticationInfo [testusername] from doGetAuthenticationInfo
+[2019-10-22 09:35:36] DEBUG org.apache.shiro.realm.AuthenticatingRealm 510 cacheAuthenticationInfoIfPossible - AuthenticationInfo caching is disabled for info [testusername].  Submitted token: [com.shadow.springboot.application.shiro.token.PasswordToken@1fa622ec].
+[2019-10-22 09:35:36] DEBUG org.apache.shiro.authc.AbstractAuthenticator 233 authenticate - Authentication successful for token [com.shadow.springboot.application.shiro.token.PasswordToken@1fa622ec].  Returned account [testusername]
+[2019-10-22 09:35:36] DEBUG org.apache.shiro.subject.support.DefaultSubjectContext 101 resolveSecurityManager - No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+[2019-10-22 09:35:36] DEBUG org.apache.shiro.subject.support.DefaultSubjectContext 101 resolveSecurityManager - No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+[2019-10-22 09:35:36] DEBUG org.apache.shiro.web.servlet.SimpleCookie 226 addCookieHeader - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Mon, 21-Oct-2019 01:35:36 GMT]
+[2019-10-22 09:35:36] DEBUG org.apache.shiro.mgt.AbstractRememberMeManager 290 onSuccessfulLogin - AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-connect
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50042} open
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50042} Header: [uid, addr, disabled, email, nickname, password, regtime, salt, tel, username]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50042} Result: [2, testaddr, 0, testemail, testnickname, 810E3A9CD89BDAF998EE5BCD5FEF2CF1, 2019-10-11 17:14:15.0, 1p19ht, testtel, testusername]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50042} closed
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50043} open
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50043} Header: [uid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50043} Result: [2, admin, admin, 2019-09-27 18:13:06.0, null, 管理员角色, 1, 2019-09-27 18:13:06.0]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50043} Result: [2, role_guest, role_guest, 2019-09-27 18:13:06.0, null, 访客角色, 1, 2019-09-27 18:13:06.0]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50043} closed
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.RedisChannelHandler 171 dispatch - dispatching command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.DefaultEndpoint 339 channelWriteAndFlush - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.DefaultEndpoint 153 write - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] write() done
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandHandler 341 write - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] write(ctx, AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandEncoder 99 encode - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379] writing command AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandHandler 536 channelRead - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.CommandHandler 581 decode - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] Stack contains: 1 commands
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.RedisStateMachine 93 decode - Decode AsyncCommand [type=SETEX, output=StatusOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 09:35:36] DEBUG io.lettuce.core.protocol.RedisStateMachine 190 decode - Decoded AsyncCommand [type=SETEX, output=StatusOutput [output=OK, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50044} open
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50044} Header: [uid, addr, disabled, email, nickname, password, regtime, salt, tel, username]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50044} Result: [2, testaddr, 0, testemail, testnickname, 810E3A9CD89BDAF998EE5BCD5FEF2CF1, 2019-10-11 17:14:15.0, 1p19ht, testtel, testusername]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50044} closed
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} connected
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} pool-connect
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} setAutoCommit false
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10002, pstmt-20005, rs-50045} open
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10002, pstmt-20005, rs-50045} Header: [GENERATED_KEY]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10002, pstmt-20005, rs-50045} Result: [43]
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10002, pstmt-20005, rs-50045} closed
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-recycle
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} commited
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} setAutoCommit true
+[2019-10-22 09:35:36] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} pool-recycle
+[2019-10-22 09:37:44] DEBUG com.shadow.springboot.application.shiro.config.RestPathMatchingFilterChainResolver 54 getChain - requestURI=/user/role/testusername
+[2019-10-22 09:37:44] DEBUG com.shadow.springboot.application.shiro.config.RestPathMatchingFilterChainResolver 86 getChain - Matched path pattern [/user/role/*] for requestURI [/user/role/testusername].  Utilizing corresponding filter chain...
+[2019-10-22 09:37:44] DEBUG com.shadow.springboot.application.shiro.filter.BonJwtFilter 49 isAccessAllowed - isAccessAllowed is called.
+[2019-10-22 09:37:44] DEBUG com.shadow.springboot.application.shiro.realm.JwtRealm 69 doGetAuthenticationInfo - start.jwt=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoszF0OwiAQBOC77DMk_NP0Mgbs1qCWGhaMiendC8bH-TIzX7jXBDMYZaV2ZuVXqSduotU8COV4XM0SlULhvQYG1GIvV6TaCEsOG3ZMRAP3B2be9Y1lYKgwS-ulF1N_ZoCf1x-U-0HZnziGYdlSZiNdbq0_w3ECAAD__w.iRchIQ4syGifR9zqfC8yd4HqygqzYBha8USSc6aR3KkGoa6pVZJPSqnmArkpckF-RpEsIXyqPKrXmeJJflsN4A
+[2019-10-22 09:37:44] DEBUG com.shadow.springboot.application.shiro.realm.JwtRealm 86 doGetAuthenticationInfo - end.jwt=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoszF0OwiAQBOC77DMk_NP0Mgbs1qCWGhaMiendC8bH-TIzX7jXBDMYZaV2ZuVXqSduotU8COV4XM0SlULhvQYG1GIvV6TaCEsOG3ZMRAP3B2be9Y1lYKgwS-ulF1N_ZoCf1x-U-0HZnziGYdlSZiNdbq0_w3ECAAD__w.iRchIQ4syGifR9zqfC8yd4HqygqzYBha8USSc6aR3KkGoa6pVZJPSqnmArkpckF-RpEsIXyqPKrXmeJJflsN4A
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.realm.AuthenticatingRealm 572 getAuthenticationInfo - Looked up AuthenticationInfo [jwt:{"jti":"4251364f-c138-4b53-a026-bf4db22e0773","sub":"testusername","iss":"token-server","iat":1571708136,"exp":1571726136,"roles":"admin,role_guest"}] from doGetAuthenticationInfo
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.realm.AuthenticatingRealm 510 cacheAuthenticationInfoIfPossible - AuthenticationInfo caching is disabled for info [jwt:{"jti":"4251364f-c138-4b53-a026-bf4db22e0773","sub":"testusername","iss":"token-server","iat":1571708136,"exp":1571726136,"roles":"admin,role_guest"}].  Submitted token: [com.shadow.springboot.application.shiro.token.JwtToken@740d4c8b].
+[2019-10-22 09:37:44] DEBUG com.shadow.springboot.application.shiro.matcher.JwtMatcher 30 doCredentialsMatch - start.jwt=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoszF0OwiAQBOC77DMk_NP0Mgbs1qCWGhaMiendC8bH-TIzX7jXBDMYZaV2ZuVXqSduotU8COV4XM0SlULhvQYG1GIvV6TaCEsOG3ZMRAP3B2be9Y1lYKgwS-ulF1N_ZoCf1x-U-0HZnziGYdlSZiNdbq0_w3ECAAD__w.iRchIQ4syGifR9zqfC8yd4HqygqzYBha8USSc6aR3KkGoa6pVZJPSqnmArkpckF-RpEsIXyqPKrXmeJJflsN4A
+[2019-10-22 09:37:44] DEBUG com.shadow.springboot.application.shiro.matcher.JwtMatcher 46 doCredentialsMatch - end.jwt=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoszF0OwiAQBOC77DMk_NP0Mgbs1qCWGhaMiendC8bH-TIzX7jXBDMYZaV2ZuVXqSduotU8COV4XM0SlULhvQYG1GIvV6TaCEsOG3ZMRAP3B2be9Y1lYKgwS-ulF1N_ZoCf1x-U-0HZnziGYdlSZiNdbq0_w3ECAAD__w.iRchIQ4syGifR9zqfC8yd4HqygqzYBha8USSc6aR3KkGoa6pVZJPSqnmArkpckF-RpEsIXyqPKrXmeJJflsN4A
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.authc.AbstractAuthenticator 233 authenticate - Authentication successful for token [com.shadow.springboot.application.shiro.token.JwtToken@740d4c8b].  Returned account [jwt:{"jti":"4251364f-c138-4b53-a026-bf4db22e0773","sub":"testusername","iss":"token-server","iat":1571708136,"exp":1571726136,"roles":"admin,role_guest"}]
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.subject.support.DefaultSubjectContext 101 resolveSecurityManager - No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.subject.support.DefaultSubjectContext 101 resolveSecurityManager - No SecurityManager available in subject context map.  Falling back to SecurityUtils.getSecurityManager() lookup.
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.web.servlet.SimpleCookie 226 addCookieHeader - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Mon, 21-Oct-2019 01:37:44 GMT]
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.mgt.AbstractRememberMeManager 290 onSuccessfulLogin - AuthenticationToken did not indicate RememberMe is requested.  RememberMe functionality will not be executed for corresponding account.
+[2019-10-22 09:37:44] DEBUG com.shadow.springboot.application.shiro.filter.BonJwtFilter 60 isAccessAllowed - isAccessAllowed is called 1.
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.realm.AuthorizingRealm 234 getAuthorizationCacheLazy - No authorizationCache instance set.  Checking for a cacheManager...
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} pool-connect
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.realm.AuthorizingRealm 234 getAuthorizationCacheLazy - No authorizationCache instance set.  Checking for a cacheManager...
+[2019-10-22 09:37:44] DEBUG org.apache.shiro.realm.AuthorizingRealm 248 getAuthorizationCacheLazy - No cache or cacheManager properties have been set.  Authorization cache cannot be obtained.
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} setAutoCommit false
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10002, pstmt-20006, rs-50046} open
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10002, pstmt-20006, rs-50046} Header: [GENERATED_KEY]
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10002, pstmt-20006, rs-50046} Result: [72]
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10002, pstmt-20006, rs-50046} closed
+[2019-10-22 09:37:44] DEBUG com.shadow.springboot.application.controller.UserController 43 getUserRoleList - getUserRoleList called
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-connect
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50047} open
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50047} Header: [uid, addr, disabled, email, nickname, password, regtime, salt, tel, username]
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50047} Result: [2, testaddr, 0, testemail, testnickname, 810E3A9CD89BDAF998EE5BCD5FEF2CF1, 2019-10-11 17:14:15.0, 1p19ht, testtel, testusername]
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20003, rs-50047} closed
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} commited
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} setAutoCommit true
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} pool-recycle
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50048} open
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50048} Header: [uid, rid, rid, createTime, description, role, status, updateTime]
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50048} Result: [2, admin, admin, 2019-09-27 18:13:06.0, null, 管理员角色, 1, 2019-09-27 18:13:06.0]
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50048} Result: [2, role_guest, role_guest, 2019-09-27 18:13:06.0, null, 访客角色, 1, 2019-09-27 18:13:06.0]
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20004, rs-50048} closed
+[2019-10-22 09:37:44] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-recycle
+[2019-10-22 16:34:51] DEBUG com.shadow.springboot.application.shiro.config.RestPathMatchingFilterChainResolver 54 getChain - requestURI=/user/role/testusername
+[2019-10-22 16:34:51] DEBUG com.shadow.springboot.application.shiro.config.RestPathMatchingFilterChainResolver 86 getChain - Matched path pattern [/user/role/*] for requestURI [/user/role/testusername].  Utilizing corresponding filter chain...
+[2019-10-22 16:34:51] DEBUG com.shadow.springboot.application.shiro.filter.BonJwtFilter 49 isAccessAllowed - isAccessAllowed is called.
+[2019-10-22 16:34:51] DEBUG com.shadow.springboot.application.shiro.realm.JwtRealm 69 doGetAuthenticationInfo - start.jwt=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoszF0OwiAQBOC77DMk_NP0Mgbs1qCWGhaMiendC8bH-TIzX7jXBDMYZaV2ZuVXqSduotU8COV4XM0SlULhvQYG1GIvV6TaCEsOG3ZMRAP3B2be9Y1lYKgwS-ulF1N_ZoCf1x-U-0HZnziGYdlSZiNdbq0_w3ECAAD__w.iRchIQ4syGifR9zqfC8yd4HqygqzYBha8USSc6aR3KkGoa6pVZJPSqnmArkpckF-RpEsIXyqPKrXmeJJflsN4A
+[2019-10-22 16:34:51] DEBUG com.shadow.springboot.application.shiro.realm.JwtRealm 86 doGetAuthenticationInfo - end.jwt=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoszF0OwiAQBOC77DMk_NP0Mgbs1qCWGhaMiendC8bH-TIzX7jXBDMYZaV2ZuVXqSduotU8COV4XM0SlULhvQYG1GIvV6TaCEsOG3ZMRAP3B2be9Y1lYKgwS-ulF1N_ZoCf1x-U-0HZnziGYdlSZiNdbq0_w3ECAAD__w.iRchIQ4syGifR9zqfC8yd4HqygqzYBha8USSc6aR3KkGoa6pVZJPSqnmArkpckF-RpEsIXyqPKrXmeJJflsN4A
+[2019-10-22 16:34:51] DEBUG org.apache.shiro.realm.AuthenticatingRealm 572 getAuthenticationInfo - Looked up AuthenticationInfo [jwt:{"jti":"4251364f-c138-4b53-a026-bf4db22e0773","sub":"testusername","iss":"token-server","iat":1571708136,"exp":1571726136,"roles":"admin,role_guest"}] from doGetAuthenticationInfo
+[2019-10-22 16:34:51] DEBUG org.apache.shiro.realm.AuthenticatingRealm 510 cacheAuthenticationInfoIfPossible - AuthenticationInfo caching is disabled for info [jwt:{"jti":"4251364f-c138-4b53-a026-bf4db22e0773","sub":"testusername","iss":"token-server","iat":1571708136,"exp":1571726136,"roles":"admin,role_guest"}].  Submitted token: [com.shadow.springboot.application.shiro.token.JwtToken@3f0a3980].
+[2019-10-22 16:34:51] DEBUG com.shadow.springboot.application.shiro.matcher.JwtMatcher 30 doCredentialsMatch - start.jwt=eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNoszF0OwiAQBOC77DMk_NP0Mgbs1qCWGhaMiendC8bH-TIzX7jXBDMYZaV2ZuVXqSduotU8COV4XM0SlULhvQYG1GIvV6TaCEsOG3ZMRAP3B2be9Y1lYKgwS-ulF1N_ZoCf1x-U-0HZnziGYdlSZiNdbq0_w3ECAAD__w.iRchIQ4syGifR9zqfC8yd4HqygqzYBha8USSc6aR3KkGoa6pVZJPSqnmArkpckF-RpEsIXyqPKrXmeJJflsN4A
+[2019-10-22 16:34:51] DEBUG org.apache.shiro.web.servlet.SimpleCookie 226 addCookieHeader - Added HttpServletResponse Cookie [rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Mon, 21-Oct-2019 08:34:51 GMT]
+[2019-10-22 16:34:51] DEBUG io.lettuce.core.RedisChannelHandler 171 dispatch - dispatching command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 16:34:51] DEBUG io.lettuce.core.protocol.DefaultEndpoint 339 channelWriteAndFlush - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] write() writeAndFlush command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 16:34:51] DEBUG io.lettuce.core.protocol.CommandHandler 341 write - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] write(ctx, AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], promise)
+[2019-10-22 16:34:51] DEBUG io.lettuce.core.protocol.CommandEncoder 99 encode - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379] writing command AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 16:34:51] DEBUG io.lettuce.core.protocol.CommandHandler 536 channelRead - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] Received: 5 bytes, 1 commands in the stack
+[2019-10-22 16:34:51] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-connect
+[2019-10-22 16:34:51] DEBUG io.lettuce.core.protocol.CommandHandler 581 decode - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, chid=0x1] Stack contains: 1 commands
+[2019-10-22 16:34:51] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} setAutoCommit false
+[2019-10-22 16:34:51] DEBUG io.lettuce.core.protocol.RedisStateMachine 93 decode - Decode AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command]
+[2019-10-22 16:34:51] DEBUG io.lettuce.core.protocol.RedisStateMachine 190 decode - Decoded AsyncCommand [type=GET, output=ValueOutput [output=null, error='null'], commandType=io.lettuce.core.protocol.Command], empty stack: true
+[2019-10-22 16:34:51] DEBUG io.lettuce.core.protocol.DefaultEndpoint 153 write - [channel=0xe5082ec3, /127.0.0.1:31494 -> localhost/127.0.0.1:6379, epid=0x1] write() done
+[2019-10-22 16:34:51] DEBUG com.shadow.springboot.application.shiro.filter.BonJwtFilter 121 onAccessDenied - onAccessDenied is called.
+[2019-10-22 16:34:51] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20002, rs-50049} open
+[2019-10-22 16:34:51] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20002, rs-50049} Header: [GENERATED_KEY]
+[2019-10-22 16:34:51] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20002, rs-50049} Result: [73]
+[2019-10-22 16:34:51] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 142 resultSetLog - {conn-10001, pstmt-20002, rs-50049} closed
+[2019-10-22 16:34:51] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} commited
+[2019-10-22 16:34:51] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} setAutoCommit true
+[2019-10-22 16:34:51] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10001} pool-recycle
+[2019-10-22 16:37:46] DEBUG com.alibaba.druid.filter.logging.Log4j2Filter 132 connectionLog - {conn-10002} closed

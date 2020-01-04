@@ -1,0 +1,207 @@
+[2019-10-22 09:34:54] DEBUG 137 statementLog - {conn-10001, pstmt-20000} created. select resource0_.rid as rid1_3_, resource0_.code as code2_3_, resource0_.createTime as createTi3_3_, resource0_.icon as icon4_3_, resource0_.method as method5_3_, resource0_.name as name6_3_, resource0_.parentId as parentId7_3_, resource0_.resourceType as resource8_3_, resource0_.status as status9_3_, resource0_.updateTime as updateT10_3_, resource0_.uri as uri11_3_ from sys_resource resource0_
+[2019-10-22 09:34:54] DEBUG 137 statementLog - {conn-10001, pstmt-20000} Parameters : []
+[2019-10-22 09:34:54] DEBUG 137 statementLog - {conn-10001, pstmt-20000} Types : []
+[2019-10-22 09:34:54] DEBUG 137 statementLog - {conn-10001, pstmt-20000, rs-50000} query executed. 27.058407 millis. select resource0_.rid as rid1_3_, resource0_.code as code2_3_, resource0_.createTime as createTi3_3_, resource0_.icon as icon4_3_, resource0_.method as method5_3_, resource0_.name as name6_3_, resource0_.parentId as parentId7_3_, resource0_.resourceType as resource8_3_, resource0_.status as status9_3_, resource0_.updateTime as updateT10_3_, resource0_.uri as uri11_3_ from sys_resource resource0_
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20000} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} created. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [45]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50001} query executed. 10.790519 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [44]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50002} query executed. 1.918448 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [43]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50003} query executed. 1.974043 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [42]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50004} query executed. 3.137256 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [41]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50005} query executed. 1.871406 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [40]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50006} query executed. 3.226208 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [39]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50007} query executed. 1.6084 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [38]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50008} query executed. 1.718306 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [37]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50009} query executed. 2.536833 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [36]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50010} query executed. 1.891078 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [35]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50011} query executed. 2.004834 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [34]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50012} query executed. 1.379179 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [33]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50013} query executed. 1.412963 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [32]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50014} query executed. 1.578464 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [31]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50015} query executed. 1.510468 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [30]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50016} query executed. 1.543396 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [29]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50017} query executed. 2.219942 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [28]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50018} query executed. 1.836766 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [27]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50019} query executed. 1.607972 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [26]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50020} query executed. 5.288774 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [25]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50021} query executed. 3.73768 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [24]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50022} query executed. 4.549791 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [23]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50023} query executed. 2.085232 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [22]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50024} query executed. 2.163492 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [21]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50025} query executed. 2.576177 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [20]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50026} query executed. 5.706163 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [19]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50027} query executed. 2.53555 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [18]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50028} query executed. 2.691643 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [17]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50029} query executed. 2.518871 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [15]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50030} query executed. 2.290505 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [12]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50031} query executed. 2.28409 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [10]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50032} query executed. 2.027072 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [9]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50033} query executed. 1.875682 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [7]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50034} query executed. 4.485644 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [6]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50035} query executed. 2.745954 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [4]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50036} query executed. 1.827785 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [3]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50037} query executed. 1.856866 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Parameters : [1]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} Types : [INTEGER]
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001, rs-50038} query executed. 1.977891 millis. select rolelist0_.pid as pid1_6_0_, rolelist0_.rid as rid2_6_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_role_resource rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.pid=?
+[2019-10-22 09:34:55] DEBUG 137 statementLog - {conn-10001, pstmt-20001} clearParameters. 
+[2019-10-22 09:35:17] DEBUG 137 statementLog - {conn-10001, pstmt-20002} created. insert into sys_operation_log (api, createTime, logName, message, method, succeed, userId) values (?, ?, ?, ?, ?, ?, ?)
+[2019-10-22 09:35:17] DEBUG 137 statementLog - {conn-10001, pstmt-20002} Parameters : [/user/role/testusername, 2019-10-22 09:35:17.301, 业务操作日志, null, GET, 1, testusername2]
+[2019-10-22 09:35:17] DEBUG 137 statementLog - {conn-10001, pstmt-20002} Types : [VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, SMALLINT, VARCHAR]
+[2019-10-22 09:35:17] DEBUG 137 statementLog - {conn-10001, pstmt-20002} update executed. effort 1. 7.429174 millis. insert into sys_operation_log (api, createTime, logName, message, method, succeed, userId) values (?, ?, ?, ?, ?, ?, ?)
+[2019-10-22 09:35:17] DEBUG 137 statementLog - {conn-10001, pstmt-20002} clearParameters. 
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003} created. select user0_.uid as uid1_7_, user0_.addr as addr2_7_, user0_.disabled as disabled3_7_, user0_.email as email4_7_, user0_.nickname as nickname5_7_, user0_.password as password6_7_, user0_.regtime as regtime7_7_, user0_.salt as salt8_7_, user0_.tel as tel9_7_, user0_.username as usernam10_7_ from sys_user user0_ where user0_.username=?
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003} Parameters : [testusername]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003} Types : [VARCHAR]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003, rs-50040} query executed. 5.373449 millis. select user0_.uid as uid1_7_, user0_.addr as addr2_7_, user0_.disabled as disabled3_7_, user0_.email as email4_7_, user0_.nickname as nickname5_7_, user0_.password as password6_7_, user0_.regtime as regtime7_7_, user0_.salt as salt8_7_, user0_.tel as tel9_7_, user0_.username as usernam10_7_ from sys_user user0_ where user0_.username=?
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003} clearParameters. 
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20004} created. select rolelist0_.uid as uid2_8_0_, rolelist0_.rid as rid1_8_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_user_role rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.uid=?
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20004} Parameters : [2]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20004} Types : [BIGINT]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20004, rs-50041} query executed. 3.313876 millis. select rolelist0_.uid as uid2_8_0_, rolelist0_.rid as rid1_8_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_user_role rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.uid=?
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20004} clearParameters. 
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003} Parameters : [testusername]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003} Types : [VARCHAR]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003, rs-50042} query executed. 1.177754 millis. select user0_.uid as uid1_7_, user0_.addr as addr2_7_, user0_.disabled as disabled3_7_, user0_.email as email4_7_, user0_.nickname as nickname5_7_, user0_.password as password6_7_, user0_.regtime as regtime7_7_, user0_.salt as salt8_7_, user0_.tel as tel9_7_, user0_.username as usernam10_7_ from sys_user user0_ where user0_.username=?
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003} clearParameters. 
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20004} Parameters : [2]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20004} Types : [BIGINT]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20004, rs-50043} query executed. 1.196999 millis. select rolelist0_.uid as uid2_8_0_, rolelist0_.rid as rid1_8_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_user_role rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.uid=?
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20004} clearParameters. 
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003} Parameters : [testusername]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003} Types : [VARCHAR]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003, rs-50044} query executed. 1.393719 millis. select user0_.uid as uid1_7_, user0_.addr as addr2_7_, user0_.disabled as disabled3_7_, user0_.email as email4_7_, user0_.nickname as nickname5_7_, user0_.password as password6_7_, user0_.regtime as regtime7_7_, user0_.salt as salt8_7_, user0_.tel as tel9_7_, user0_.username as usernam10_7_ from sys_user user0_ where user0_.username=?
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10001, pstmt-20003} clearParameters. 
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10002, pstmt-20005} created. insert into sys_account_log (createTime, ip, logName, message, succeed, userId) values (?, ?, ?, ?, ?, ?)
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10002, pstmt-20005} Parameters : [2019-10-22 09:35:36.422, 0:0:0:0:0:0:0:1, 用户登录日志, 登录成功, 1, testusername]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10002, pstmt-20005} Types : [TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, SMALLINT, VARCHAR]
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10002, pstmt-20005} update executed. effort 1. 7.676784 millis. insert into sys_account_log (createTime, ip, logName, message, succeed, userId) values (?, ?, ?, ?, ?, ?)
+[2019-10-22 09:35:36] DEBUG 137 statementLog - {conn-10002, pstmt-20005} clearParameters. 
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10002, pstmt-20006} created. insert into sys_operation_log (api, createTime, logName, message, method, succeed, userId) values (?, ?, ?, ?, ?, ?, ?)
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10002, pstmt-20006} Parameters : [/user/role/testusername, 2019-10-22 09:37:44.434, 业务操作日志, null, GET, 1, testusername2]
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10002, pstmt-20006} Types : [VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, SMALLINT, VARCHAR]
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10002, pstmt-20006} update executed. effort 1. 1.461287 millis. insert into sys_operation_log (api, createTime, logName, message, method, succeed, userId) values (?, ?, ?, ?, ?, ?, ?)
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10002, pstmt-20006} clearParameters. 
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10001, pstmt-20003} Parameters : [testusername]
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10001, pstmt-20003} Types : [VARCHAR]
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10001, pstmt-20003, rs-50047} query executed. 2.454296 millis. select user0_.uid as uid1_7_, user0_.addr as addr2_7_, user0_.disabled as disabled3_7_, user0_.email as email4_7_, user0_.nickname as nickname5_7_, user0_.password as password6_7_, user0_.regtime as regtime7_7_, user0_.salt as salt8_7_, user0_.tel as tel9_7_, user0_.username as usernam10_7_ from sys_user user0_ where user0_.username=?
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10001, pstmt-20003} clearParameters. 
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10001, pstmt-20004} Parameters : [2]
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10001, pstmt-20004} Types : [BIGINT]
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10001, pstmt-20004, rs-50048} query executed. 1.745248 millis. select rolelist0_.uid as uid2_8_0_, rolelist0_.rid as rid1_8_0_, role1_.rid as rid1_4_1_, role1_.createTime as createTi2_4_1_, role1_.description as descript3_4_1_, role1_.role as role4_4_1_, role1_.status as status5_4_1_, role1_.updateTime as updateTi6_4_1_ from sys_user_role rolelist0_ inner join sys_role role1_ on rolelist0_.rid=role1_.rid where rolelist0_.uid=?
+[2019-10-22 09:37:44] DEBUG 137 statementLog - {conn-10001, pstmt-20004} clearParameters. 
+[2019-10-22 16:34:51] DEBUG 137 statementLog - {conn-10001, pstmt-20002} Parameters : [/user/role/testusername, 2019-10-22 16:34:51.633, 业务操作日志, null, GET, 1, testusername2]
+[2019-10-22 16:34:51] DEBUG 137 statementLog - {conn-10001, pstmt-20002} Types : [VARCHAR, TIMESTAMP, VARCHAR, VARCHAR, VARCHAR, SMALLINT, VARCHAR]
+[2019-10-22 16:34:51] DEBUG 137 statementLog - {conn-10001, pstmt-20002} update executed. effort 1. 1.548956 millis. insert into sys_operation_log (api, createTime, logName, message, method, succeed, userId) values (?, ?, ?, ?, ?, ?, ?)
+[2019-10-22 16:34:51] DEBUG 137 statementLog - {conn-10001, pstmt-20002} clearParameters. 
