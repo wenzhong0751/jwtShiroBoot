@@ -9,6 +9,8 @@ import org.apache.shiro.authc.*;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 这里是登录认证realm
@@ -17,7 +19,7 @@ import org.apache.shiro.subject.PrincipalCollection;
  * @date 21:08 2018/2/10
  */
 public class PasswordRealm extends AuthorizingRealm {
-
+    private static final Logger log = LoggerFactory.getLogger(PasswordRealm.class);
 
     private AccountProvider accountProvider;
 

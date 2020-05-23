@@ -8,7 +8,7 @@ import java.util.List;
 public interface ResourceService {
     List<Resource> getMenus();
 
-    List<Resource> getAuthorityMenusByUid(Long uid);
+    List<Resource> getAuthorityMenusByUsername(String username);
 
     Boolean addMenu(Resource resource);
 

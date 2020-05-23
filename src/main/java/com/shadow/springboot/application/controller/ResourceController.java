@@ -28,9 +28,9 @@ public class ResourceController extends BaseAction {
     @ApiOperation(value = "获取用户被授权菜单",notes = "通过uid获取对应用户被授权的菜单列表,获取完整菜单树形结构")
     @GetMapping("authorityMenu")
     public Message getAuthorityMenu(HttpServletRequest request) {
-        Long uid = Long.parseLong(request.getHeader("appId"));
+        String username = request.getHeader("appId");
         List<MenuTreeNode> treeNodes = new ArrayList<>();
-        List<com.shadow.springboot.application.domain.bo.Resource> resources = resourceService.getAuthorityMenusByUid(uid);
+        List<com.shadow.springboot.application.domain.bo.Resource> resources = resourceService.getAuthorityMenusByUsername(username);
 
         for (com.shadow.springboot.application.domain.bo.Resource resource : resources) {
             MenuTreeNode node = new MenuTreeNode();

@@ -2,23 +2,27 @@ package com.shadow.springboot.application.service.impl;
 
 import com.shadow.springboot.application.domain.bo.Role;
 import com.shadow.springboot.application.domain.bo.User;
+import com.shadow.springboot.application.domain.vo.UserSearchVo;
 import com.shadow.springboot.application.repository.RoleRepository;
 import com.shadow.springboot.application.repository.UserRepository;
 import com.shadow.springboot.application.service.UserService;
+import com.shadow.springboot.application.util.BeanCopyUtil;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import javax.persistence.criteria.*;
+import java.util.*;
 
 @Service("userServiceImpl")
 public class UserServiceImpl implements UserService {
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserServiceImpl.class);
 
     @Autowired
     private UserRepository userRepository;
@@ -34,11 +38,30 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public Page<User> getPage(int pageNum, int pageSize, UserSearchVo searchVo) {
+        Sort sort = new Sort(Sort.Direction.ASC, "uid");
+        Pageable pageable = PageRequest.of(pageNum,pageSize,sort);
+
+        Specification<User> specification = new Specification<User>(){
+            @Override
+            public Predicate toPredicate(Root<User> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+                Path<String> username = root.get("username");
+                Predicate p1 = criteriaBuilder.like(username,"%" + searchVo.getUsername() + "%");
+                return p1;
+            }
+        };
+        return userRepository.findAll(specification,pageable);
+    }
+
+    @Override
     public Set<String> getRoleSet(String username) {
-        List<Role> roles = userRepository.findByUsername(username).getRoleList();
+        Optional<User> user = userRepository.findByUsername(username);
         Set<String> roleSet = new HashSet<String>();
-        for (Role role : roles) {
-            roleSet.add(role.getRid());
+        if (user.isPresent()){
+            List<Role> roles = user.get().getRoleList();
+            for (Role role : roles) {
+                roleSet.add(role.getRid());
+            }
         }
         return roleSet;
     }
@@ -76,7 +99,8 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getByUsername(String username) {
-        return userRepository.findByUsername(username);
+        Optional<User> user = userRepository.findByUsername(username);
+        return user.isPresent()?user.get():null;
     }
 
     @Override
@@ -84,4 +108,17 @@ public class UserServiceImpl implements UserService {
         return userRepository.save(user);
     }
 
+    @Override
+    public Boolean update(User user) {
+        Optional<User> dbInst = userRepository.findById(user.getUid());
+        if (dbInst.isPresent()) {
+            LOGGER.info("      db:" + dbInst.get());
+            LOGGER.info("user    :" + user);
+            BeanCopyUtil.beanCopy(user, dbInst.get());
+            LOGGER.info("after db:" + dbInst.get());
+            userRepository.save(dbInst.get());
+            return true;
+        }
+        return false;
+    }
 }

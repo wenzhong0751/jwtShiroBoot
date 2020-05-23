@@ -39,8 +39,8 @@ public class ResourceServiceImpl implements ResourceService {
     }
 
     @Override
-    public List<Resource> getAuthorityMenusByUid(Long uid) {
-        Optional<User> user = userRepository.findById(uid);
+    public List<Resource> getAuthorityMenusByUsername(String username) {
+        Optional<User> user = userRepository.findByUsername(username);
         if (user.isPresent()) {
             List<Role> roleList = user.get().getRoleList();
             LOGGER.debug("roleList.size()=" + roleList.size());

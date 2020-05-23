@@ -38,7 +38,7 @@ public class JwtRealm extends AuthorizingRealm {
 
     @Override
     protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-
+        LOGGER.debug("doGetAuthorizationInfo start");
         String payload = (String) principalCollection.getPrimaryPrincipal();
         // likely to be json, parse it:
         if (payload.startsWith(JWT) && payload.charAt(NUM_4) == LEFT
@@ -46,7 +46,15 @@ public class JwtRealm extends AuthorizingRealm {
 
             Map<String, Object> payloadMap = JsonWebTokenUtil.readValue(payload.substring(4));
             Set<String> roles = JsonWebTokenUtil.split((String) payloadMap.get("roles"));
+            for (String role:roles
+                 ) {
+                LOGGER.debug("role:" + role);
+            }
             Set<String> permissions = JsonWebTokenUtil.split((String) payloadMap.get("perms"));
+            for (String per:permissions
+                 ) {
+                LOGGER.debug("permission:" + per);
+            }
             SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
             if (null != roles && !roles.isEmpty()) {
                 info.setRoles(roles);
@@ -54,8 +62,10 @@ public class JwtRealm extends AuthorizingRealm {
             if (null != permissions && !permissions.isEmpty()) {
                 info.setStringPermissions(permissions);
             }
+            LOGGER.debug("doGetAuthorizationInfo return info:" + info);
             return info;
         }
+        LOGGER.debug("doGetAuthorizationInfo return null");
         return null;
     }
 

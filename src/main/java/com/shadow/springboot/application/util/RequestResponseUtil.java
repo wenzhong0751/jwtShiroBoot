@@ -1,8 +1,8 @@
 package com.shadow.springboot.application.util;
 
 import com.alibaba.fastjson.JSON;
-import com.alibaba.fastjson.util.IOUtils;
 import com.shadow.springboot.application.support.XssSqlHttpServletRequestWrapper;
+import org.apache.commons.io.IOUtils;
 import org.apache.shiro.web.util.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -57,12 +57,16 @@ public class RequestResponseUtil {
     public static Map<String, String> getRequestBodyMap(ServletRequest request) {
         Map<String, String> dataMap = new HashMap<>(16);
         // 判断是否已经将 inputStream 流中的 body 数据读出放入 attribute
+        LOGGER.info("request.getAttribute(STR_BODY)" + request.getAttribute(STR_BODY));
         if (request.getAttribute(STR_BODY) != null) {
             // 已经读出则返回attribute中的body
             return (Map<String, String>) request.getAttribute(STR_BODY);
         } else {
             try {
-                Map<String, String> maps = JSON.parseObject(request.getInputStream(), Map.class);
+                String str = IOUtils.toString(request.getInputStream(),"utf-8");
+                LOGGER.info("input:" + str);
+                Map<String, String> maps = JSON.parseObject(str, Map.class);
+//                Map<String, String> maps = JSON.parseObject(request.getInputStream(), Map.class);
                 dataMap.putAll(maps);
                 request.setAttribute(STR_BODY, dataMap);
             } catch (IOException e) {

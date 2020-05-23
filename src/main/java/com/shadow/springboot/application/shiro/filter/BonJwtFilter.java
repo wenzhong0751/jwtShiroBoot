@@ -46,7 +46,7 @@ public class BonJwtFilter extends AbstractPathMatchingFilter {
     protected boolean isAccessAllowed(ServletRequest servletRequest, ServletResponse servletResponse, Object mappedValue) throws Exception {
         Subject subject = getSubject(servletRequest, servletResponse);
 
-        LOGGER.debug("isAccessAllowed is called.");
+        LOGGER.debug("isAccessAllowed is start.");
         //记录调用api日志到数据库
         LogExeManager.getInstance().executeLogTask(LogTaskFactory.bussinssLog(WebUtils.toHttp(servletRequest).getHeader("appId"),
                 WebUtils.toHttp(servletRequest).getRequestURI(), WebUtils.toHttp(servletRequest).getMethod(), (short) 1, null));
@@ -57,7 +57,7 @@ public class BonJwtFilter extends AbstractPathMatchingFilter {
             AuthenticationToken token = createJwtToken(servletRequest);
             try {
                 subject.login(token);
-                LOGGER.debug("isAccessAllowed is called 1.");
+                LOGGER.debug("isAccessAllowed is called after subject.login.");
                 return this.checkRoles(subject, mappedValue);
             } catch (AuthenticationException e) {
                 LOGGER.warn("err=" + e.getMessage());
@@ -112,6 +112,7 @@ public class BonJwtFilter extends AbstractPathMatchingFilter {
             LOGGER.debug("isAccessAllowed is called 11.");
             return false;
         }
+
     }
 
     @Override
@@ -159,6 +160,11 @@ public class BonJwtFilter extends AbstractPathMatchingFilter {
      */
     private boolean checkRoles(Subject subject, Object mappedValue) {
         String[] rolesArray = (String[]) mappedValue;
+        for (String role: rolesArray
+             ) {
+            LOGGER.debug("checkRoles.role=" + role);
+        }
+        LOGGER.debug("checkRoles is end.");
         return rolesArray == null || rolesArray.length == 0 || Stream.of(rolesArray).anyMatch(role -> subject.hasRole(role.trim()));
     }
 

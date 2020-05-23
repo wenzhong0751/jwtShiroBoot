@@ -1,10 +1,14 @@
 package com.shadow.springboot.application.controller;
 
+import com.shadow.springboot.application.domain.bo.Role;
 import com.shadow.springboot.application.domain.bo.User;
 import com.shadow.springboot.application.domain.vo.Message;
+import com.shadow.springboot.application.domain.vo.UserSearchVo;
 import com.shadow.springboot.application.service.UserService;
 import com.shadow.springboot.application.support.factory.LogTaskFactory;
 import com.shadow.springboot.application.support.manager.LogExeManager;
+import com.shadow.springboot.application.util.CommonUtil;
+import com.shadow.springboot.application.util.Md5Util;
 import io.swagger.annotations.ApiOperation;
 import org.apache.shiro.SecurityUtils;
 import org.slf4j.Logger;
@@ -49,8 +53,20 @@ public class UserController extends BaseAction {
 
     @ApiOperation(value = "获取用户列表", notes = "GET获取所有注册用户的信息列表")
     @GetMapping("/list/{start}/{limit}")
-    public Message getUserList(@PathVariable Integer start, @PathVariable Integer limit) {
-        Page<User> userPage = userService.getPage(start, limit);
+    public Message getUserList(@PathVariable Integer start, @PathVariable Integer limit,HttpServletRequest request) {
+        LOGGER.info("userList called.");
+        Map<String, String> map = getRequestParameter(request);
+        Page<User> userPage;
+        if (map.size() > 0){
+            UserSearchVo searchVo = new UserSearchVo();
+            String username = map.get("username");
+            if (!StringUtils.isEmpty(username)){
+                searchVo.setUsername(username);
+            }
+            userPage = userService.getPage(start,limit,searchVo);
+        }else {
+            userPage = userService.getPage(start, limit);
+        }
         return new Message().ok(6666, "return user list success").addData("pageInfo", userPage);
     }
 
@@ -89,5 +105,34 @@ public class UserController extends BaseAction {
         LogExeManager.getInstance().executeLogTask(LogTaskFactory.exitLog(appId, request.getRemoteAddr(), (short) 1, ""));
 
         return new Message().ok(6666, "用户退出成功");
+    }
+
+    @ApiOperation(value = "更新用户", httpMethod = "PUT")
+    @PutMapping()
+    public Message updateUser(@RequestBody User user) {
+
+        boolean flag = userService.update(user);
+        if (flag) {
+            return new Message().ok(6666, "update success");
+        } else {
+            return new Message().error(1111, "update fail");
+        }
+    }
+
+    @ApiOperation(value = "新增用户", httpMethod = "POST")
+    @PostMapping()
+    public  Message addUser(@RequestBody User user){
+        String salt = CommonUtil.getRandomString(6);
+        user.setSalt(salt);
+        String newPwd = Md5Util.md5( user.getPassword() + salt);
+        user.setPassword(newPwd);
+        user.setRegtime(new Date());
+        User rtnUser = userService.save(user);
+
+        if (rtnUser.getUid() > 0) {
+            return new Message().ok(6666, "update success");
+        } else {
+            return new Message().error(1111, "update fail");
+        }
     }
 }

@@ -16,6 +16,7 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Optional;
 import java.util.Set;
 
 /**
@@ -33,14 +34,18 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public Account loadAccount(String appId) {
-        User user = userRepository.findByUsername(appId);
-        return user != null ? new Account(user.getUsername(), user.getPassword(), user.getSalt()) : null;
+        Optional<User> userOptional = userRepository.findByUsername(appId);
+        if (userOptional.isPresent()){
+            User user = userOptional.get();
+            return new Account(user.getUsername(), user.getPassword(), user.getSalt());
+        }
+        return null;
     }
 
     @Override
     public boolean isAccountExistByUid(String uid) {
-        User user = userRepository.findByUsername(uid);
-        return user != null ? Boolean.TRUE : Boolean.FALSE;
+        Optional<User> user = userRepository.findByUsername(uid);
+        return user.isPresent() ? Boolean.TRUE : Boolean.FALSE;
     }
 
     @Override

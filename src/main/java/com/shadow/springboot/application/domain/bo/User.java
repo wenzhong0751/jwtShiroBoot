@@ -129,9 +129,9 @@ public class User implements Serializable {
     }
 
     public List<Role> getRoleList() {
-        if (roleList == null){
-            roleList = new ArrayList<Role>();
-        }
+//        if (roleList == null){
+//            roleList = new ArrayList<Role>();
+//        }
         return roleList;
     }
 
@@ -147,5 +147,22 @@ public class User implements Serializable {
     public String getCredentialsSalt() {
         //重新对盐重新进行了定义，用户名+salt，这样就更加不容易被破解
         return this.username + this.salt;
+    }
+
+    @Override
+    public String toString() {
+        return "User{" +
+                "uid=" + uid +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", salt='" + salt + '\'' +
+                ", email='" + email + '\'' +
+                ", nickname='" + nickname + '\'' +
+                ", tel='" + tel + '\'' +
+                ", addr='" + addr + '\'' +
+                ", regtime=" + regtime +
+                ", disabled=" + disabled +
+                ", roleList=" + roleList +
+                '}';
     }
 }

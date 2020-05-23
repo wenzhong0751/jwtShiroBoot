@@ -53,6 +53,9 @@ dependencies {
     //java jwt
     implementation 'io.jsonwebtoken:jjwt:0.9.1'
 
+    //调试用的
+    implementation 'commons-io:commons-io:2.4'
+
     //分页支持pageHelper
 //    implementation ('com.github.pagehelper:pagehelper-spring-boot-starter:1.2.10'){
 //        exclude  group:'org.springframework.boot',module:'spring-boot-starter-logging'

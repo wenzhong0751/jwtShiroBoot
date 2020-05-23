@@ -18,5 +18,5 @@ public interface ShiroFilterRulesProvider {
      *
      * @return java.util.List
      */
-    public List<RolePermRule> loadRolePermRules();
+    List<RolePermRule> loadRolePermRules();
 }

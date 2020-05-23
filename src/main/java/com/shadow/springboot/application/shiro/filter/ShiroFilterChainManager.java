@@ -78,9 +78,11 @@ public class ShiroFilterChainManager {
         // -------------dynamic 动态URL
         if (shiroFilterRulesProvider != null) {
             List<RolePermRule> rolePermRules = this.shiroFilterRulesProvider.loadRolePermRules();
-            LOGGER.debug("rolePermRules.size=" + rolePermRules.size());
+//            LOGGER.debug("rolePermRules.size=" + rolePermRules.size());
+
             if (null != rolePermRules) {
                 rolePermRules.forEach(rule -> {
+                    LOGGER.debug("rolePermRule:" + rule.toString());
                     StringBuilder chain = rule.toFilterChain();
 //                    LOGGER.debug("chain=" + chain.toString() + ";url=" + rule.getUrl());
                     if (null != chain) {

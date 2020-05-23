@@ -111,5 +111,10 @@
         <logger name="org.springframework" level="info"/>
         <logger name="org.thymeleaf" level="warn"/>
         <logger name="com.alibaba" level="info"/>
+
+        <!-- 方便调试的过滤 -->
+        <logger name="io.lettuce.core" level="info"/>
+        <logger name="io.netty" level="info"/>
+
     </loggers>
 </configuration>

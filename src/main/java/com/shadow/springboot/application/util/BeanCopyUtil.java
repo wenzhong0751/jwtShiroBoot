@@ -1,5 +1,8 @@
 package com.shadow.springboot.application.util;
 
+import com.shadow.springboot.application.controller.UserController;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
@@ -8,6 +11,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class BeanCopyUtil {
+    private static final Logger LOGGER = LoggerFactory.getLogger(BeanCopyUtil.class);
     //source中的非空属性复制到target中
     public static <T> void beanCopy(T source, T target) {
         BeanUtils.copyProperties(source, target, getNullPropertyNames(source));
@@ -31,6 +35,11 @@ public class BeanCopyUtil {
     public static String[] getNullPropertyNames(Object source) {
         Set<String> emptyNames = getNullPropertyNameSet(source);
         String[] result = new String[emptyNames.size()];
+        for (String emptyName:emptyNames
+             ) {
+            LOGGER.info(emptyName);
+        }
+
         return emptyNames.toArray(result);
     }
 
