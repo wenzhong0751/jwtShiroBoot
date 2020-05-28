@@ -3,6 +3,7 @@ package com.shadow.springboot.application.service.impl;
 import com.shadow.springboot.application.domain.bo.Resource;
 import com.shadow.springboot.application.domain.bo.Role;
 import com.shadow.springboot.application.domain.bo.User;
+import com.shadow.springboot.application.domain.vo.RoleSearchVo;
 import com.shadow.springboot.application.repository.ResourceRepository;
 import com.shadow.springboot.application.repository.RoleRepository;
 import com.shadow.springboot.application.repository.UserRepository;
@@ -13,8 +14,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 
+import javax.persistence.criteria.*;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -36,8 +39,29 @@ public class RoleServiceImpl implements RoleService {
     @Override
     public Page<Role> getPage(int pageNum, int pageSize) {
         Sort sort = new Sort(Sort.Direction.ASC, "rid");
+        if (pageNum > 0){
+            pageNum -= 1;
+        }
         Pageable pageable = PageRequest.of(pageNum, pageSize, sort);
         return roleRepository.findAll(pageable);
+    }
+
+    @Override
+    public Page<Role> getPage(int pageNum, int pageSize, RoleSearchVo searchVo) {
+        Sort sort = new Sort(Sort.Direction.ASC, "rid");
+        if (pageNum > 0){
+            pageNum -= 1;
+        }
+        Pageable pageable = PageRequest.of(pageNum, pageSize, sort);
+        Specification<Role> specification = new Specification<Role>(){
+            @Override
+            public Predicate toPredicate(Root<Role> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+                Path<Integer> status = root.get("status");
+                Predicate p = criteriaBuilder.equal(status,searchVo.getStatus());
+                return p;
+            }
+        };
+        return roleRepository.findAll(specification,pageable);
     }
 
     @Override

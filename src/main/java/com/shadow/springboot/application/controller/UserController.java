@@ -4,6 +4,7 @@ import com.shadow.springboot.application.domain.bo.Role;
 import com.shadow.springboot.application.domain.bo.User;
 import com.shadow.springboot.application.domain.vo.Message;
 import com.shadow.springboot.application.domain.vo.UserSearchVo;
+import com.shadow.springboot.application.service.RoleService;
 import com.shadow.springboot.application.service.UserService;
 import com.shadow.springboot.application.support.factory.LogTaskFactory;
 import com.shadow.springboot.application.support.manager.LogExeManager;
@@ -40,6 +41,9 @@ public class UserController extends BaseAction {
 
     @Resource(name = "userServiceImpl")
     private UserService userService;
+
+    @Resource(name = "roleServiceImpl")
+    private RoleService roleService;
 
     @ApiOperation(value = "获取对应用户角色", notes = "GET根据用户的appId获取对应用户的角色")
     @GetMapping("/role/{appId}")
@@ -79,6 +83,18 @@ public class UserController extends BaseAction {
         boolean flag = userService.authority(uid, rid);
 
         return flag ? new Message().ok(6666, "authority success") : new Message().error(1111, "authority error");
+    }
+
+    @ApiOperation(value = "给用户授权添加角色列表", httpMethod = "PUT")
+    @PutMapping("/authority/rolelist")
+    public Message authorityUserRoleList(HttpServletRequest request) {
+        Map<String, String> map = getRequestBody(request);
+        String rids = map.get("rids");
+        String uid = map.get("uid");
+        Long lUid = Long.parseLong(map.get("uid"));
+        boolean flag = userService.authorityList(lUid, rids);
+
+        return flag ? new Message().ok(6666, "authority success") : new Message().error(1111, "authority roleList error");
     }
 
     @ApiOperation(value = "删除已经授权的用户角色", httpMethod = "DELETE")

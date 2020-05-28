@@ -102,4 +102,14 @@ public class Role {
     public void setResourceList(List<Resource> resourceList) {
         this.resourceList = resourceList;
     }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "rid='" + rid + '\'' +
+                ", role='" + role + '\'' +
+                ", description='" + description + '\'' +
+                ", status=" + status +
+                '}';
+    }
 }
