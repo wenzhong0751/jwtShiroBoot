@@ -5,11 +5,13 @@ package com.shadow.springboot.application.controller;
 import com.shadow.springboot.application.domain.bo.Role;
 import com.shadow.springboot.application.domain.bo.User;
 import com.shadow.springboot.application.domain.vo.Message;
+import com.shadow.springboot.application.domain.vo.RoleSearchVo;
 import com.shadow.springboot.application.service.RoleService;
 import io.swagger.annotations.ApiOperation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.domain.Page;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
@@ -101,9 +103,23 @@ public class RoleController extends BaseAction {
 
     @SuppressWarnings("unchecked")
     @ApiOperation(value = "获取角色LIST", httpMethod = "GET")
-    @GetMapping("{pageNum}/{pageSize}")
-    public Message getRoles(@PathVariable Integer pageNum, @PathVariable Integer pageSize) {
-        Page<Role> rolePage = roleService.getPage(pageNum, pageSize);
+    @GetMapping("/list/{pageNum}/{pageSize}")
+    public Message getRoles(@PathVariable Integer pageNum, @PathVariable Integer pageSize,HttpServletRequest request) {
+        Page<Role> rolePage;
+
+        Map<String, String> map = getRequestParameter(request);
+        if (map.size() > 0){
+            RoleSearchVo searchVo = new RoleSearchVo();
+            String tmp = map.get("status");
+            if (!StringUtils.isEmpty(tmp)){
+                int status = Integer.parseInt(tmp);
+                searchVo.setStatus(status);
+            }
+            rolePage = roleService.getPage(pageNum, pageSize, searchVo);
+        }else{
+            rolePage = roleService.getPage(pageNum, pageSize);
+        }
+
         return new Message().ok(6666, "return user list success").addData("pageInfo", rolePage);
     }
 

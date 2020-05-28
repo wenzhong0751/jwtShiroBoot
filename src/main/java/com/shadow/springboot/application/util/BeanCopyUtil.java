@@ -35,10 +35,6 @@ public class BeanCopyUtil {
     public static String[] getNullPropertyNames(Object source) {
         Set<String> emptyNames = getNullPropertyNameSet(source);
         String[] result = new String[emptyNames.size()];
-        for (String emptyName:emptyNames
-             ) {
-            LOGGER.info(emptyName);
-        }
 
         return emptyNames.toArray(result);
     }

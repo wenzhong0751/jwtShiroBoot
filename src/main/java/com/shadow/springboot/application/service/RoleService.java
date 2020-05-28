@@ -4,10 +4,12 @@ import com.shadow.springboot.application.domain.bo.Permission;
 import com.shadow.springboot.application.domain.bo.Resource;
 import com.shadow.springboot.application.domain.bo.Role;
 import com.shadow.springboot.application.domain.bo.User;
+import com.shadow.springboot.application.domain.vo.RoleSearchVo;
 import org.springframework.data.domain.Page;
 
 public interface RoleService {
     Page<Role> getPage(int pageNum, int pageSize);
+    Page<Role> getPage(int pageNum, int pageSize, RoleSearchVo roleSearchVo);
     Boolean addRole(Role role);
     Boolean updateRole(Role role);
     Boolean deleteRoleByRoleId(String rid);

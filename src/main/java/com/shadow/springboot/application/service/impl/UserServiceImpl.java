@@ -33,6 +33,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public Page<User> getPage(int pageNum, int pageSize) {
         Sort sort = new Sort(Sort.Direction.ASC, "uid");
+        if (pageNum > 0){
+            pageNum -= 1;
+        }
         Pageable pageable = PageRequest.of(pageNum,pageSize,sort);
         return userRepository.findAll(pageable);
     }
@@ -40,6 +43,9 @@ public class UserServiceImpl implements UserService {
     @Override
     public Page<User> getPage(int pageNum, int pageSize, UserSearchVo searchVo) {
         Sort sort = new Sort(Sort.Direction.ASC, "uid");
+        if (pageNum > 0){
+            pageNum -= 1;
+        }
         Pageable pageable = PageRequest.of(pageNum,pageSize,sort);
 
         Specification<User> specification = new Specification<User>(){
@@ -81,6 +87,40 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
+    public Boolean authorityList(Long uid, String rids) {
+        Optional<User> user = userRepository.findById(uid);
+        if (rids.length() < 1){
+            rids = "role_anon";
+        }
+        String[] ridArr = rids.split(",");
+        if (user.isPresent()) {
+            Specification<Role> specification = new Specification<Role>(){
+                @Override
+                public Predicate toPredicate(Root<Role> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+                    Path<String> ridPath = root.get("rid");
+                    List<Predicate> listOr = new ArrayList<Predicate>();
+                    for (String rid:ridArr
+                         ) {
+                        listOr.add(criteriaBuilder.equal(ridPath,rid));
+                    }
+                    Predicate[] arrayOr = new Predicate[listOr.size()];
+                    Predicate pre_or = criteriaBuilder.or(listOr.toArray(arrayOr));
+                    return pre_or;
+                }
+            };
+            List<Role> roleList = roleRepository.findAll(specification);
+            for (Role r:roleList
+                 ) {
+                LOGGER.info("role:" + r.toString());
+            }
+            user.get().setRoleList(roleList);
+            userRepository.save(user.get());
+            return true;
+        }
+        return false;
+    }
+
+    @Override
     public Boolean deleteAuthority(Long uid, String rid) {
         Optional<User> user = userRepository.findById(uid);
         if (user.isPresent()) {
@@ -105,6 +145,15 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User save(User user) {
+        // 新增用户，如果没有分配角色，则指定默认的“非角色”
+        if (user.getRoleList() == null){
+            Optional<Role> role = roleRepository.findById("role_anon");
+            if (role.isPresent()){
+                List<Role> list = new ArrayList<Role>();
+                list.add(role.get());
+                user.setRoleList(list);
+            }
+        }
         return userRepository.save(user);
     }
 

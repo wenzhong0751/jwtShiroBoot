@@ -2,7 +2,7 @@ package com.shadow.springboot.application.domain.vo;
 
 import java.util.Date;
 
-public class MenuTreeNode extends BaseTreeNode {
+public class                                                                                                                             MenuTreeNode extends BaseTreeNode {
 
     private String code;
 

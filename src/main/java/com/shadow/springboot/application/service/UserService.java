@@ -11,6 +11,7 @@ public interface UserService {
     Page<User> getPage(int pageNum, int pageSize, UserSearchVo searchVo);
     Set<String> getRoleSet(String username);
     Boolean authority(Long uid,String rid);
+    Boolean authorityList(Long uid,String rids);
     Boolean deleteAuthority(Long uid,String rid);
     User getByUsername(String username);
     User save(User user);
