@@ -1,12 +1,14 @@
 package com.shadow.springboot.application.domain.bo;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import org.hibernate.annotations.DynamicInsert;
 import org.hibernate.annotations.DynamicUpdate;
 
 import javax.persistence.*;
 import java.sql.Date;
 import java.util.List;
 
+@DynamicInsert
 @DynamicUpdate
 @Entity
 @Table(name = "sys_role")

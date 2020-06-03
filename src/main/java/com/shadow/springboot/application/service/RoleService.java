@@ -7,12 +7,16 @@ import com.shadow.springboot.application.domain.bo.User;
 import com.shadow.springboot.application.domain.vo.RoleSearchVo;
 import org.springframework.data.domain.Page;
 
+import java.util.Optional;
+
 public interface RoleService {
     Page<Role> getPage(int pageNum, int pageSize);
     Page<Role> getPage(int pageNum, int pageSize, RoleSearchVo roleSearchVo);
+    Optional<Role> getRoleById(String id);
     Boolean addRole(Role role);
     Boolean updateRole(Role role);
     Boolean deleteRoleByRoleId(String rid);
+    Boolean authorityList(String rid,String resourceIds,Integer type);
 
     Boolean authorityRoleResource(String rid,Integer pid);
     Boolean deleteAuthorityRoleResource(String rid,Integer pid);

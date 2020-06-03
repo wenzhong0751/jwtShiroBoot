@@ -112,7 +112,7 @@ public class ResourceController extends BaseAction {
             // 其他查询teamId 对应分类下的apis
             pageInfo = resourceService.getApiListByTeamId(teamId,currentPage,pageSize);
         }
-        return new Message().ok(6666,"return apis success").addData("data",pageInfo);
+        return new Message().ok(6666,"return apis success").addData("pageInfo",pageInfo);
     }
 
     @ApiOperation(value = "增加API",httpMethod = "POST")

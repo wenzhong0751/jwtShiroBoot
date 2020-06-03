@@ -57,7 +57,6 @@ public class RequestResponseUtil {
     public static Map<String, String> getRequestBodyMap(ServletRequest request) {
         Map<String, String> dataMap = new HashMap<>(16);
         // 判断是否已经将 inputStream 流中的 body 数据读出放入 attribute
-        LOGGER.info("request.getAttribute(STR_BODY)" + request.getAttribute(STR_BODY));
         if (request.getAttribute(STR_BODY) != null) {
             // 已经读出则返回attribute中的body
             return (Map<String, String>) request.getAttribute(STR_BODY);

@@ -32,7 +32,6 @@ public class ResourceServiceImpl implements ResourceService {
     @Autowired
     private UserRepository userRepository;
 
-
     @Override
     public List<Resource> getMenus() {
         return resourceRepository.findAll().stream().filter(item -> item.getResourceType().equals(1)).collect(Collectors.toList());
@@ -95,6 +94,9 @@ public class ResourceServiceImpl implements ResourceService {
 
     @Override
     public Page<Resource> getApiListByTeamId(Integer teamId, int pageNum, int pageSize) {
+        if (pageNum > 0){
+            pageNum -= 1;
+        }
         List<Resource> list = resourceRepository.findAll().stream().filter(item -> item.getParentId().equals(teamId)).collect(Collectors.toList());
         Pageable pageable = PageRequest.of(pageNum, pageSize);
         return PageHelper.listConvertToPage(list, pageable);

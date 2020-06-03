@@ -90,7 +90,6 @@ public class UserController extends BaseAction {
     public Message authorityUserRoleList(HttpServletRequest request) {
         Map<String, String> map = getRequestBody(request);
         String rids = map.get("rids");
-        String uid = map.get("uid");
         Long lUid = Long.parseLong(map.get("uid"));
         boolean flag = userService.authorityList(lUid, rids);
 

@@ -1,7 +1,5 @@
 package com.shadow.springboot.application.controller;
 
-//import com.usthe.bootshiro.shiro.filter.ShiroFilterChainManager;
-
 import com.shadow.springboot.application.domain.bo.Role;
 import com.shadow.springboot.application.domain.bo.User;
 import com.shadow.springboot.application.domain.vo.Message;
@@ -17,6 +15,7 @@ import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;
+import java.util.Optional;
 
 /**
  * @author tomsun28
@@ -31,8 +30,30 @@ public class RoleController extends BaseAction {
     @Resource(name = "roleServiceImpl")
     private RoleService roleService;
 
-//    @Autowired
-//    private ShiroFilterChainManager shiroFilterChainManager;
+    @SuppressWarnings("unchecked")
+    @ApiOperation(value = "获取角色LIST", httpMethod = "GET")
+    @GetMapping("/list/{pageNum}/{pageSize}")
+    public Message getRoles(@PathVariable Integer pageNum, @PathVariable Integer pageSize,HttpServletRequest request) {
+        Page<Role> rolePage;
+
+        Map<String, String> map = getRequestParameter(request);
+        if (map.size() > 0){
+            RoleSearchVo searchVo = new RoleSearchVo();
+            String tmp = map.get("status");
+            if (!StringUtils.isEmpty(tmp)){
+                int status = Integer.parseInt(tmp);
+                searchVo.setStatus(status);
+            }
+            if (!StringUtils.isEmpty(map.get("rid"))){
+                searchVo.setRid(map.get("rid"));
+            }
+            rolePage = roleService.getPage(pageNum, pageSize, searchVo);
+        }else{
+            rolePage = roleService.getPage(pageNum, pageSize);
+        }
+
+        return new Message().ok(6666, "return user list success").addData("pageInfo", rolePage);
+    }
 
     @SuppressWarnings("unchecked")
     @ApiOperation(value = "获取角色关联的(roleId)对应用户列表", httpMethod = "GET")
@@ -54,6 +75,7 @@ public class RoleController extends BaseAction {
     @ApiOperation(value = "获取角色(roleId)所被授权的API资源")
     @GetMapping("api/{roleId}/{currentPage}/{pageSize}")
     public Message getRestApiExtendByRoleId(@PathVariable String roleId, @PathVariable Integer currentPage, @PathVariable Integer pageSize) {
+        LOGGER.info("roleId:" + roleId);
         Page<com.shadow.springboot.application.domain.bo.Resource> permissionPage = roleService.getAuthorityApisByRoleId(roleId, currentPage, pageSize);
         return new Message().ok(6666, "return api success").addData("pageInfo", permissionPage);
     }
@@ -71,7 +93,7 @@ public class RoleController extends BaseAction {
     @GetMapping("menu/{roleId}/{currentPage}/{pageSize}")
     public Message getMenusByRoleId(@PathVariable String roleId, @PathVariable Integer currentPage, @PathVariable Integer pageSize) {
         Page<com.shadow.springboot.application.domain.bo.Resource> pageInfo = roleService.getAuthorityMenusByRoleId(roleId, currentPage, pageSize);
-        return new Message().ok(6666, "return api success").addData("data", pageInfo);
+        return new Message().ok(6666, "return api success").addData("pageInfo", pageInfo);
     }
 
     @SuppressWarnings("unchecked")
@@ -89,7 +111,18 @@ public class RoleController extends BaseAction {
         String roleId = map.get("roleId");
         int resourceId = Integer.parseInt(map.get("resourceId"));
         boolean flag = roleService.authorityRoleResource(roleId, resourceId);
-//        shiroFilterChainManager.reloadFilterChain();
+        return flag ? new Message().ok(6666, "authority success") : new Message().error(1111, "authority error");
+    }
+
+    @ApiOperation(value = "给角色授权资源列表", httpMethod = "POST")
+    @PutMapping("/authority/resourcelist")
+    public Message authorityRoleResourceList(HttpServletRequest request) {
+        Map<String, String> map = getRequestBody(request);
+        String roleId = map.get("roleId");
+        String rids = map.get("rids");
+        String type = map.get("type");
+
+        boolean flag = roleService.authorityList(roleId,rids,Integer.parseInt(type));
         return flag ? new Message().ok(6666, "authority success") : new Message().error(1111, "authority error");
     }
 
@@ -101,31 +134,13 @@ public class RoleController extends BaseAction {
         return flag ? new Message().ok(6666, "authority success") : new Message().error(1111, "authority error");
     }
 
-    @SuppressWarnings("unchecked")
-    @ApiOperation(value = "获取角色LIST", httpMethod = "GET")
-    @GetMapping("/list/{pageNum}/{pageSize}")
-    public Message getRoles(@PathVariable Integer pageNum, @PathVariable Integer pageSize,HttpServletRequest request) {
-        Page<Role> rolePage;
-
-        Map<String, String> map = getRequestParameter(request);
-        if (map.size() > 0){
-            RoleSearchVo searchVo = new RoleSearchVo();
-            String tmp = map.get("status");
-            if (!StringUtils.isEmpty(tmp)){
-                int status = Integer.parseInt(tmp);
-                searchVo.setStatus(status);
-            }
-            rolePage = roleService.getPage(pageNum, pageSize, searchVo);
-        }else{
-            rolePage = roleService.getPage(pageNum, pageSize);
-        }
-
-        return new Message().ok(6666, "return user list success").addData("pageInfo", rolePage);
-    }
-
     @ApiOperation(value = "添加角色", httpMethod = "POST")
     @PostMapping()
     public Message addRole(@RequestBody Role role) {
+        Optional<Role> dbRole = roleService.getRoleById(role.getRid());
+        if (dbRole.isPresent()){
+            return new Message().error(111, "角色代码已经存在，不能重复使用！");
+        }
 
         boolean flag = roleService.addRole(role);
         if (flag) {

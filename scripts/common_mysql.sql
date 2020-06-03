@@ -40,7 +40,7 @@ CREATE TABLE `sys_resource`  (
   `resourceType` smallint COMMENT '类型 1:菜单menu 2:资源element(rest-api) 3:资源分类',
   `method` varchar(10) COMMENT '访问方式 GET POST PUT DELETE PATCH',
   `icon` varchar(100) COMMENT '图标',
-  `status` smallint NULL DEFAULT 1 COMMENT '状态   1:正常、9：禁用',
+  `status` smallint NULL DEFAULT 1 COMMENT '状态   1:正常、0：禁用',
   `createTime` datetime DEFAULT NOW() COMMENT '创建时间',
   `updateTime` datetime DEFAULT NOW() COMMENT '更新时间',
   PRIMARY KEY (`rid`)

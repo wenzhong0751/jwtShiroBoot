@@ -12,6 +12,11 @@ import java.util.List;
 public class Resource implements Serializable {
 
     private static final long serialVersionUID = 5134851771518893550L;
+
+    public static final Integer TYPE_MENU = 1;
+    public static final Integer TYPE_CATEGORY = 3;
+    public static final Integer TYPE_API = 2;
+
     @Id
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "resource_gen")
     @TableGenerator(name = "resource_gen",
@@ -134,5 +139,23 @@ public class Resource implements Serializable {
 
     public void setRoleList(List<Role> roleList) {
         this.roleList = roleList;
+    }
+
+    @Override
+    public String toString() {
+        return "Resource{" +
+                "rid=" + rid +
+                ", code='" + code + '\'' +
+                ", name='" + name + '\'' +
+                ", parentId=" + parentId +
+                ", uri='" + uri + '\'' +
+                ", resourceType=" + resourceType +
+                ", method='" + method + '\'' +
+                ", icon='" + icon + '\'' +
+                ", status=" + status +
+                ", createTime=" + createTime +
+                ", updateTime=" + updateTime +
+                ", roleList=" + roleList +
+                '}';
     }
 }

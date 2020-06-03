@@ -109,10 +109,6 @@ public class UserServiceImpl implements UserService {
                 }
             };
             List<Role> roleList = roleRepository.findAll(specification);
-            for (Role r:roleList
-                 ) {
-                LOGGER.info("role:" + r.toString());
-            }
             user.get().setRoleList(roleList);
             userRepository.save(user.get());
             return true;
@@ -161,10 +157,7 @@ public class UserServiceImpl implements UserService {
     public Boolean update(User user) {
         Optional<User> dbInst = userRepository.findById(user.getUid());
         if (dbInst.isPresent()) {
-            LOGGER.info("      db:" + dbInst.get());
-            LOGGER.info("user    :" + user);
             BeanCopyUtil.beanCopy(user, dbInst.get());
-            LOGGER.info("after db:" + dbInst.get());
             userRepository.save(dbInst.get());
             return true;
         }

@@ -16,8 +16,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.*;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 import javax.persistence.criteria.*;
+import java.sql.Date;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -56,12 +59,26 @@ public class RoleServiceImpl implements RoleService {
         Specification<Role> specification = new Specification<Role>(){
             @Override
             public Predicate toPredicate(Root<Role> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
-                Path<Integer> status = root.get("status");
-                Predicate p = criteriaBuilder.equal(status,searchVo.getStatus());
-                return p;
+                LOGGER.info(searchVo.toString());
+                List<Predicate> listOr = new ArrayList<Predicate>();
+                if (searchVo.getStatus() != null){
+                    LOGGER.info("status:" + searchVo.getStatus());
+                    listOr.add(criteriaBuilder.equal(root.get("status"),searchVo.getStatus()));
+                }
+                if (!StringUtils.isEmpty(searchVo.getRid())){
+                    LOGGER.info("rid:" + searchVo.getRid());
+                    listOr.add(criteriaBuilder.like(root.get("rid"),"%" + searchVo.getRid() + "%"));
+                }
+                Predicate[] arrayOr = new Predicate[listOr.size()];
+                Predicate pre_or = criteriaBuilder.or(listOr.toArray(arrayOr));
+                return pre_or;
             }
         };
         return roleRepository.findAll(specification,pageable);
+    }
+
+    public Optional<Role> getRoleById(String id){
+        return roleRepository.findById(id);
     }
 
     @Override
@@ -87,6 +104,58 @@ public class RoleServiceImpl implements RoleService {
     @Override
     public Boolean deleteRoleByRoleId(String rid) {
         roleRepository.deleteById(rid);
+        return true;
+    }
+
+    @Override
+    public Boolean authorityList(String rid,String resourceIds,Integer type){
+        Optional<Role> oRole = roleRepository.findById(rid);
+        if (!oRole.isPresent()){
+            return  false;
+        }
+
+        List<Resource> resourceList;
+        List<Resource> newList = new ArrayList<Resource>();
+        if (resourceIds.length() < 1){
+            resourceList  = new ArrayList<>();
+        }else {
+            // 根据ID获取资源
+            String[] ridArray = resourceIds.split(",");
+            Specification<Resource> specification = new Specification<Resource>() {
+                @Override
+                public Predicate toPredicate(Root<Resource> root, CriteriaQuery<?> query, CriteriaBuilder criteriaBuilder) {
+                    Path<Integer> path = root.get("rid");
+                    CriteriaBuilder.In<Integer> in = criteriaBuilder.in(path);
+                    for (String resId : ridArray
+                    ) {
+                        in.value(Integer.parseInt(resId));
+                    }
+                    return criteriaBuilder.and(in);
+                }
+            };
+            resourceList = resourceRepository.findAll(specification);
+        }
+
+        newList.addAll(resourceList);
+        List<Resource> rawList = oRole.get().getResourceList();
+
+        if (type == Resource.TYPE_MENU){
+            //menu stream().filter(item->!item.getRid().equals(pid)).collect(Collectors.toList());
+            if (rawList != null){
+                List<Resource> rawMenuList = rawList.stream().filter(item->item.getResourceType() == type).collect(Collectors.toList());
+                rawList.removeAll(rawMenuList);
+                newList.addAll(rawList);
+            }
+        }else {
+            // category and api
+            if (rawList != null){
+                List<Resource> rawApiList = rawList.stream().filter(item->item.getResourceType() != Resource.TYPE_MENU).collect(Collectors.toList());
+                rawList.removeAll(rawApiList);
+                newList.addAll(rawList);
+            }
+        }
+        oRole.get().setResourceList(newList);
+        roleRepository.save(oRole.get());
         return true;
     }
 
@@ -125,6 +194,10 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public Page<Resource> getAuthorityApisByRoleId(String rid, int pageNum, int pageSize) {
+        // 前端页码从1开始，后端为0开始
+        if (pageNum > 0){
+            pageNum -= 1;
+        }
         Optional<Role> dbInst = roleRepository.findById(rid);
         if (dbInst.isPresent()) {
             List<Resource> list = dbInst.get().getResourceList().stream().filter(item->item.getResourceType().equals(2)).collect(Collectors.toList());
