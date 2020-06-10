@@ -1,5 +1,6 @@
 package com.shadow.springboot.application.controller;
 
+import com.alibaba.fastjson.JSON;
 import com.shadow.springboot.application.domain.bo.User;
 import com.shadow.springboot.application.domain.vo.Message;
 import com.shadow.springboot.application.service.AccountService;
@@ -15,6 +16,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.util.StringUtils;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -71,7 +73,9 @@ public class AccountController extends BaseAction {
         // 根据appId获取其对应所拥有的角色(这里设计为角色对应资源，没有权限对应资源)
         String roles = accountService.loadAccountRole(appId);
         // 时间以秒计算,token有效刷新时间是token有效过期时间的2倍
-        long refreshPeriodTime = 36000L;
+//        long refreshPeriodTime = 36000L;
+        long refreshPeriodTime = JsonWebTokenUtil.PERIOD;
+
         String jwt = JsonWebTokenUtil.issueJWT(UUID.randomUUID().toString(), appId,
                 "token-server", refreshPeriodTime >> 1, roles, null, SignatureAlgorithm.HS512);
         // 将签发的JWT存储到Redis： {JWT-SESSION-{appID} , jwt}

@@ -103,6 +103,7 @@ public class PasswordFilter extends AccessControlFilter {
         if (isAccountRegisterPost(request)) {
             return true;
         }
+
         // 之后添加对账户的找回等
         // response 告知无效请求
         Message message = new Message().error(1111, "error request");

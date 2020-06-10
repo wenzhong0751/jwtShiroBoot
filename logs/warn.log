@@ -1,0 +1,2 @@
+[2020-06-10 16:09:13] WARN  org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration 226 openEntityManagerInViewInterceptor - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[2020-06-10 16:17:26] WARN  com.shadow.springboot.application.shiro.filter.BonJwtFilter 63 isAccessAllowed - err=expiredJwt

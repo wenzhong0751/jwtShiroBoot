@@ -53,6 +53,7 @@ public class ShiroFilterChainManager {
         Map<String, Filter> filters = new LinkedHashMap<>();
         PasswordFilter passwordFilter = new PasswordFilter();
         passwordFilter.setRedisTemplate(redisTemplate);
+//        passwordFilter.setAccountService(accountService);
         filters.put("auth", passwordFilter);
         BonJwtFilter jwtFilter = new BonJwtFilter();
         jwtFilter.setRedisTemplate(redisTemplate);
@@ -73,7 +74,8 @@ public class ShiroFilterChainManager {
         List<String> defalutAnon = Arrays.asList("/css/**", "/js/**");
         defalutAnon.forEach(ignored -> filterChain.put(ignored, "anon"));
         // -------------auth 默认需要认证过滤器的URL 走auth--PasswordFilter
-        List<String> defalutAuth = Arrays.asList("/account/**");
+//        List<String> defalutAuth = Arrays.asList("/account/**","/account/login");
+        List<String> defalutAuth = Arrays.asList("/account/login","/account/register","/account/jwt");
         defalutAuth.forEach(auth -> filterChain.put(auth, "auth"));
         // -------------dynamic 动态URL
         if (shiroFilterRulesProvider != null) {

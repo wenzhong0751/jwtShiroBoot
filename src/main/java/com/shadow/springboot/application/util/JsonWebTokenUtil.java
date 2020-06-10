@@ -29,6 +29,7 @@ public class JsonWebTokenUtil {
     private static final ObjectMapper MAPPER = new ObjectMapper();
     private static final int COUNT_2 = 2;
     private static CompressionCodecResolver codecResolver = new DefaultCompressionCodecResolver();
+    public  static final long PERIOD = 3600L;    //jwt在服务端缓存中保存的时间，jwt有效期为其一半，单位为秒，客户端可不限制jwt时间
 
     private JsonWebTokenUtil() {
 
@@ -40,7 +41,7 @@ public class JsonWebTokenUtil {
      * @param id          令牌ID
      * @param subject     用户ID
      * @param issuer      签发人
-     * @param period      有效时间(毫秒)
+     * @param period      有效时间(秒)
      * @param roles       访问主张-角色
      * @param permissions 访问主张-权限
      * @param algorithm   加密算法

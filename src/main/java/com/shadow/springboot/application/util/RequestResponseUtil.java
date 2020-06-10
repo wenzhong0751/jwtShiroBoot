@@ -6,6 +6,7 @@ import org.apache.commons.io.IOUtils;
 import org.apache.shiro.web.util.WebUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.util.StringUtils;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -64,6 +65,9 @@ public class RequestResponseUtil {
             try {
                 String str = IOUtils.toString(request.getInputStream(),"utf-8");
                 LOGGER.info("input:" + str);
+                if (StringUtils.isEmpty(str)){
+                    str = "{}";
+                }
                 Map<String, String> maps = JSON.parseObject(str, Map.class);
 //                Map<String, String> maps = JSON.parseObject(request.getInputStream(), Map.class);
                 dataMap.putAll(maps);
