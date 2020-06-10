@@ -106,6 +106,7 @@ public class UserController extends BaseAction {
     @ApiOperation(value = "用户登出", httpMethod = "POST")
     @PostMapping("/exit")
     public Message accountExit(HttpServletRequest request) {
+        LOGGER.debug("用户调用exit方法");
         SecurityUtils.getSubject().logout();
         Map<String, String> map = getRequestHeader(request);
         String appId = map.get("appid");
