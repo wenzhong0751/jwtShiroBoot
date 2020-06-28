@@ -1,2 +1,0 @@
-[2020-06-28 16:58:22] INFO  com.shadow.springboot.application.util.RequestResponseUtil 67 getRequestBodyMap - input:{"appId":"teslan","password":"XM2envgxI00qHRT9aKP6hA==","methodName":"login","userKey":"WSOQW7","timestamp":"1593334702"}
-[2020-06-28 16:58:33] INFO  com.shadow.springboot.application.util.RequestResponseUtil 67 getRequestBodyMap - input:{"appId":"teslan","password":"QF8CX2Fw+ptM5hDyo8mMiA==","methodName":"login","userKey":"E5Z65U","timestamp":"1593334713"}
