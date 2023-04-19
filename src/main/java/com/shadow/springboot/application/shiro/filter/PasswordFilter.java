@@ -54,6 +54,7 @@ public class PasswordFilter extends AccessControlFilter {
                 redisTemplate.opsForValue().set("TOKEN_KEY_" + IpUtil.getIpFromRequest(WebUtils.toHttp(request)).toUpperCase() + userKey.toUpperCase(), tokenKey, 5, TimeUnit.SECONDS);
                 // 动态秘钥response返回给前端
                 Message message = new Message();
+                LOGGER.info("tokenGet");
                 message.ok(1000, "issued tokenKey success")
                         .addData("tokenKey", tokenKey).addData("userKey", userKey.toUpperCase());
                 RequestResponseUtil.responseWrite(JSON.toJSONString(message), response);

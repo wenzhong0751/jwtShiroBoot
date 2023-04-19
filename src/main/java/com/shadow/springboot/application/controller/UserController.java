@@ -32,6 +32,7 @@ import java.util.*;
  */
 @RestController
 @RequestMapping("/user")
+@CrossOrigin
 public class UserController extends BaseAction {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);

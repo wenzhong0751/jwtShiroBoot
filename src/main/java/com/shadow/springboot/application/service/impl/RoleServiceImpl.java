@@ -41,7 +41,7 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public Page<Role> getPage(int pageNum, int pageSize) {
-        Sort sort = new Sort(Sort.Direction.ASC, "rid");
+        Sort sort = Sort.by(Sort.Direction.ASC, "rid");
         if (pageNum > 0){
             pageNum -= 1;
         }
@@ -51,7 +51,7 @@ public class RoleServiceImpl implements RoleService {
 
     @Override
     public Page<Role> getPage(int pageNum, int pageSize, RoleSearchVo searchVo) {
-        Sort sort = new Sort(Sort.Direction.ASC, "rid");
+        Sort sort = Sort.by(Sort.Direction.ASC, "rid");
         if (pageNum > 0){
             pageNum -= 1;
         }

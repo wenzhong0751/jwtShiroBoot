@@ -1,5 +1,6 @@
 package com.shadow.springboot.application;
 
+import com.shadow.springboot.application.util.Md5Util;
 import io.jsonwebtoken.*;
 import org.apache.commons.codec.binary.Base64;
 
@@ -13,14 +14,17 @@ public class TestLambda {
     public static final String SECRET_KEY = "?::4343fdf4fdf6cvf):";
 
     public static void main(String[] args) {
+        String rawMsg = "adminsalt";
+        String newPwd = Md5Util.md5(rawMsg);
+        System.out.println(newPwd);
 //        List<String> list = Arrays.asList("xuxiaoxiao", "xudada", "xuzhongzhong");
 //        list.forEach(System.out::println);
-        TestLambda testLambda = new TestLambda();
-        String token = testLambda.createJWT();
-        token = "eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNokzFEOwiAQBNC77DckAgtCL2O2dDWopaaAMTHeXdDPeZmZN1xrggkwGrYOWZJHkkhMMvigpYnezBHd2S4KBJQ293LlUlvhPdPKHVMpA7cbZ9n1yftAqjApe1QqaIdWAL8ef9Dq8IN9u_MY0rKmLEY6XVp_hs8XAAD__w.4-v_Kr3QDbyZ-Zh1pTywptvSNOg6K9Cra5PBVnud_eCwpUiZaacD88qFnd1sMWcxJ4pmG2N09pzCVLkyNyLjQQ";
-        System.out.println(token);
-        Claims c = testLambda.parseJWT(token);
-        System.out.println(c.getId());
+//        TestLambda testLambda = new TestLambda();
+//        String token = testLambda.createJWT();
+//        token = "eyJhbGciOiJIUzUxMiIsInppcCI6IkRFRiJ9.eNokzFEOwiAQBNC77DckAgtCL2O2dDWopaaAMTHeXdDPeZmZN1xrggkwGrYOWZJHkkhMMvigpYnezBHd2S4KBJQ293LlUlvhPdPKHVMpA7cbZ9n1yftAqjApe1QqaIdWAL8ef9Dq8IN9u_MY0rKmLEY6XVp_hs8XAAD__w.4-v_Kr3QDbyZ-Zh1pTywptvSNOg6K9Cra5PBVnud_eCwpUiZaacD88qFnd1sMWcxJ4pmG2N09pzCVLkyNyLjQQ";
+//        System.out.println(token);
+//        Claims c = testLambda.parseJWT(token);
+//        System.out.println(c.getId());
     }
 
     private String createJWT(){

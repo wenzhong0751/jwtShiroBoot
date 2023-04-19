@@ -32,7 +32,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Page<User> getPage(int pageNum, int pageSize) {
-        Sort sort = new Sort(Sort.Direction.ASC, "uid");
+        Sort sort = Sort.by(Sort.Direction.ASC, "uid");
         if (pageNum > 0){
             pageNum -= 1;
         }
@@ -42,7 +42,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Page<User> getPage(int pageNum, int pageSize, UserSearchVo searchVo) {
-        Sort sort = new Sort(Sort.Direction.ASC, "uid");
+        Sort sort = Sort.by(Sort.Direction.ASC, "uid");
         if (pageNum > 0){
             pageNum -= 1;
         }

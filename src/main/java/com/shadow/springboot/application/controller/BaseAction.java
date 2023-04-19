@@ -1,6 +1,7 @@
 package com.shadow.springboot.application.controller;
 
 import com.shadow.springboot.application.util.RequestResponseUtil;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.Map;

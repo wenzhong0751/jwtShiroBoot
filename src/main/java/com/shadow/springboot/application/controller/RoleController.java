@@ -23,6 +23,7 @@ import java.util.Optional;
  */
 @RequestMapping("/role")
 @RestController
+@CrossOrigin
 public class RoleController extends BaseAction {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(RoleController.class);
